@@ -22,12 +22,12 @@
 		6DEF2CF9188F9D8D00BC1A2E /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 6DEF2CF7188F9D8D00BC1A2E /* InfoPlist.strings */; };
 		6DEF2CFB188F9D8D00BC1A2E /* ProductGPSTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 6DEF2CFA188F9D8D00BC1A2E /* ProductGPSTests.m */; };
 		6DEF2D09188F9E0000BC1A2E /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 6DEF2D07188F9E0000BC1A2E /* AppDelegate.m */; };
-		6DEF2D12188FA0BB00BC1A2E /* MainMenuViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6DEF2D10188FA0BA00BC1A2E /* MainMenuViewController.m */; };
-		6DEF2D13188FA0BB00BC1A2E /* MainMenuViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6DEF2D11188FA0BA00BC1A2E /* MainMenuViewController.xib */; };
-		6DEF2D21188FAC2B00BC1A2E /* ItemsListViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6DEF2D1F188FAC2B00BC1A2E /* ItemsListViewController.m */; };
-		6DEF2D22188FAC2B00BC1A2E /* ItemsListViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6DEF2D20188FAC2B00BC1A2E /* ItemsListViewController.xib */; };
-		6DEF2D2B188FAE1200BC1A2E /* ItemDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6DEF2D29188FAE1200BC1A2E /* ItemDetailViewController.m */; };
-		6DEF2D2C188FAE1200BC1A2E /* ItemDetailViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6DEF2D2A188FAE1200BC1A2E /* ItemDetailViewController.xib */; };
+		6DEF2D39188FAE9D00BC1A2E /* ItemDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6DEF2D2F188FAE9D00BC1A2E /* ItemDetailViewController.m */; };
+		6DEF2D3A188FAE9D00BC1A2E /* ItemDetailViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6DEF2D30188FAE9D00BC1A2E /* ItemDetailViewController.xib */; };
+		6DEF2D3B188FAE9D00BC1A2E /* ItemsListViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6DEF2D33188FAE9D00BC1A2E /* ItemsListViewController.m */; };
+		6DEF2D3C188FAE9D00BC1A2E /* ItemsListViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6DEF2D34188FAE9D00BC1A2E /* ItemsListViewController.xib */; };
+		6DEF2D3D188FAE9D00BC1A2E /* MainMenuViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6DEF2D37188FAE9D00BC1A2E /* MainMenuViewController.m */; };
+		6DEF2D3E188FAE9D00BC1A2E /* MainMenuViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6DEF2D38188FAE9D00BC1A2E /* MainMenuViewController.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -59,15 +59,15 @@
 		6DEF2CFA188F9D8D00BC1A2E /* ProductGPSTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ProductGPSTests.m; sourceTree = "<group>"; };
 		6DEF2D06188F9E0000BC1A2E /* AppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		6DEF2D07188F9E0000BC1A2E /* AppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		6DEF2D0F188FA0BA00BC1A2E /* MainMenuViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MainMenuViewController.h; sourceTree = "<group>"; };
-		6DEF2D10188FA0BA00BC1A2E /* MainMenuViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MainMenuViewController.m; sourceTree = "<group>"; };
-		6DEF2D11188FA0BA00BC1A2E /* MainMenuViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MainMenuViewController.xib; sourceTree = "<group>"; };
-		6DEF2D1E188FAC2B00BC1A2E /* ItemsListViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ItemsListViewController.h; sourceTree = "<group>"; };
-		6DEF2D1F188FAC2B00BC1A2E /* ItemsListViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ItemsListViewController.m; sourceTree = "<group>"; };
-		6DEF2D20188FAC2B00BC1A2E /* ItemsListViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ItemsListViewController.xib; sourceTree = "<group>"; };
-		6DEF2D28188FAE1200BC1A2E /* ItemDetailViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ItemDetailViewController.h; sourceTree = "<group>"; };
-		6DEF2D29188FAE1200BC1A2E /* ItemDetailViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ItemDetailViewController.m; sourceTree = "<group>"; };
-		6DEF2D2A188FAE1200BC1A2E /* ItemDetailViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ItemDetailViewController.xib; sourceTree = "<group>"; };
+		6DEF2D2E188FAE9D00BC1A2E /* ItemDetailViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ItemDetailViewController.h; sourceTree = "<group>"; };
+		6DEF2D2F188FAE9D00BC1A2E /* ItemDetailViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ItemDetailViewController.m; sourceTree = "<group>"; };
+		6DEF2D30188FAE9D00BC1A2E /* ItemDetailViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ItemDetailViewController.xib; sourceTree = "<group>"; };
+		6DEF2D32188FAE9D00BC1A2E /* ItemsListViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ItemsListViewController.h; sourceTree = "<group>"; };
+		6DEF2D33188FAE9D00BC1A2E /* ItemsListViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ItemsListViewController.m; sourceTree = "<group>"; };
+		6DEF2D34188FAE9D00BC1A2E /* ItemsListViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ItemsListViewController.xib; sourceTree = "<group>"; };
+		6DEF2D36188FAE9D00BC1A2E /* MainMenuViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MainMenuViewController.h; sourceTree = "<group>"; };
+		6DEF2D37188FAE9D00BC1A2E /* MainMenuViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MainMenuViewController.m; sourceTree = "<group>"; };
+		6DEF2D38188FAE9D00BC1A2E /* MainMenuViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MainMenuViewController.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -180,17 +180,41 @@
 		6DEF2D08188F9E0000BC1A2E /* UI */ = {
 			isa = PBXGroup;
 			children = (
-				6DEF2D0F188FA0BA00BC1A2E /* MainMenuViewController.h */,
-				6DEF2D10188FA0BA00BC1A2E /* MainMenuViewController.m */,
-				6DEF2D11188FA0BA00BC1A2E /* MainMenuViewController.xib */,
-				6DEF2D1E188FAC2B00BC1A2E /* ItemsListViewController.h */,
-				6DEF2D1F188FAC2B00BC1A2E /* ItemsListViewController.m */,
-				6DEF2D20188FAC2B00BC1A2E /* ItemsListViewController.xib */,
-				6DEF2D28188FAE1200BC1A2E /* ItemDetailViewController.h */,
-				6DEF2D29188FAE1200BC1A2E /* ItemDetailViewController.m */,
-				6DEF2D2A188FAE1200BC1A2E /* ItemDetailViewController.xib */,
+				6DEF2D2D188FAE9D00BC1A2E /* Item Detail VC */,
+				6DEF2D31188FAE9D00BC1A2E /* Item List VC */,
+				6DEF2D35188FAE9D00BC1A2E /* Main Menu VC */,
 			);
 			path = UI;
+			sourceTree = "<group>";
+		};
+		6DEF2D2D188FAE9D00BC1A2E /* Item Detail VC */ = {
+			isa = PBXGroup;
+			children = (
+				6DEF2D2E188FAE9D00BC1A2E /* ItemDetailViewController.h */,
+				6DEF2D2F188FAE9D00BC1A2E /* ItemDetailViewController.m */,
+				6DEF2D30188FAE9D00BC1A2E /* ItemDetailViewController.xib */,
+			);
+			path = "Item Detail VC";
+			sourceTree = "<group>";
+		};
+		6DEF2D31188FAE9D00BC1A2E /* Item List VC */ = {
+			isa = PBXGroup;
+			children = (
+				6DEF2D32188FAE9D00BC1A2E /* ItemsListViewController.h */,
+				6DEF2D33188FAE9D00BC1A2E /* ItemsListViewController.m */,
+				6DEF2D34188FAE9D00BC1A2E /* ItemsListViewController.xib */,
+			);
+			path = "Item List VC";
+			sourceTree = "<group>";
+		};
+		6DEF2D35188FAE9D00BC1A2E /* Main Menu VC */ = {
+			isa = PBXGroup;
+			children = (
+				6DEF2D36188FAE9D00BC1A2E /* MainMenuViewController.h */,
+				6DEF2D37188FAE9D00BC1A2E /* MainMenuViewController.m */,
+				6DEF2D38188FAE9D00BC1A2E /* MainMenuViewController.xib */,
+			);
+			path = "Main Menu VC";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -269,10 +293,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				6DEF2CDC188F9D8D00BC1A2E /* InfoPlist.strings in Resources */,
-				6DEF2D22188FAC2B00BC1A2E /* ItemsListViewController.xib in Resources */,
-				6DEF2D2C188FAE1200BC1A2E /* ItemDetailViewController.xib in Resources */,
-				6DEF2D13188FA0BB00BC1A2E /* MainMenuViewController.xib in Resources */,
+				6DEF2D3C188FAE9D00BC1A2E /* ItemsListViewController.xib in Resources */,
 				6DEF2CE7188F9D8D00BC1A2E /* Images.xcassets in Resources */,
+				6DEF2D3E188FAE9D00BC1A2E /* MainMenuViewController.xib in Resources */,
+				6DEF2D3A188FAE9D00BC1A2E /* ItemDetailViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -291,11 +315,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				6DEF2D12188FA0BB00BC1A2E /* MainMenuViewController.m in Sources */,
-				6DEF2D21188FAC2B00BC1A2E /* ItemsListViewController.m in Sources */,
 				6DEF2CE5188F9D8D00BC1A2E /* ProductGPS.xcdatamodeld in Sources */,
+				6DEF2D3B188FAE9D00BC1A2E /* ItemsListViewController.m in Sources */,
 				6DEF2CDE188F9D8D00BC1A2E /* main.m in Sources */,
-				6DEF2D2B188FAE1200BC1A2E /* ItemDetailViewController.m in Sources */,
+				6DEF2D39188FAE9D00BC1A2E /* ItemDetailViewController.m in Sources */,
+				6DEF2D3D188FAE9D00BC1A2E /* MainMenuViewController.m in Sources */,
 				6DEF2D09188F9E0000BC1A2E /* AppDelegate.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
