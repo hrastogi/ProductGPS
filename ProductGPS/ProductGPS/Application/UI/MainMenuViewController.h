@@ -8,6 +8,7 @@
 
 #import <UIKit/UIKit.h>
 
-@interface MainMenuViewController : UIViewController
-
+@interface MainMenuViewController : UIViewController<UITableViewDataSource,UITableViewDelegate>
+@property (nonatomic) IBOutlet UITableView *menuTableView;
+@property (nonatomic) NSArray *menuItemsArray;
 @end
