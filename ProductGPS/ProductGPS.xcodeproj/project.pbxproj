@@ -26,6 +26,8 @@
 		6DEF2D13188FA0BB00BC1A2E /* MainMenuViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6DEF2D11188FA0BA00BC1A2E /* MainMenuViewController.xib */; };
 		6DEF2D21188FAC2B00BC1A2E /* ItemsListViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6DEF2D1F188FAC2B00BC1A2E /* ItemsListViewController.m */; };
 		6DEF2D22188FAC2B00BC1A2E /* ItemsListViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6DEF2D20188FAC2B00BC1A2E /* ItemsListViewController.xib */; };
+		6DEF2D2B188FAE1200BC1A2E /* ItemDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6DEF2D29188FAE1200BC1A2E /* ItemDetailViewController.m */; };
+		6DEF2D2C188FAE1200BC1A2E /* ItemDetailViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6DEF2D2A188FAE1200BC1A2E /* ItemDetailViewController.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -63,6 +65,9 @@
 		6DEF2D1E188FAC2B00BC1A2E /* ItemsListViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ItemsListViewController.h; sourceTree = "<group>"; };
 		6DEF2D1F188FAC2B00BC1A2E /* ItemsListViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ItemsListViewController.m; sourceTree = "<group>"; };
 		6DEF2D20188FAC2B00BC1A2E /* ItemsListViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ItemsListViewController.xib; sourceTree = "<group>"; };
+		6DEF2D28188FAE1200BC1A2E /* ItemDetailViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ItemDetailViewController.h; sourceTree = "<group>"; };
+		6DEF2D29188FAE1200BC1A2E /* ItemDetailViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ItemDetailViewController.m; sourceTree = "<group>"; };
+		6DEF2D2A188FAE1200BC1A2E /* ItemDetailViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ItemDetailViewController.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -181,6 +186,9 @@
 				6DEF2D1E188FAC2B00BC1A2E /* ItemsListViewController.h */,
 				6DEF2D1F188FAC2B00BC1A2E /* ItemsListViewController.m */,
 				6DEF2D20188FAC2B00BC1A2E /* ItemsListViewController.xib */,
+				6DEF2D28188FAE1200BC1A2E /* ItemDetailViewController.h */,
+				6DEF2D29188FAE1200BC1A2E /* ItemDetailViewController.m */,
+				6DEF2D2A188FAE1200BC1A2E /* ItemDetailViewController.xib */,
 			);
 			path = UI;
 			sourceTree = "<group>";
@@ -262,6 +270,7 @@
 			files = (
 				6DEF2CDC188F9D8D00BC1A2E /* InfoPlist.strings in Resources */,
 				6DEF2D22188FAC2B00BC1A2E /* ItemsListViewController.xib in Resources */,
+				6DEF2D2C188FAE1200BC1A2E /* ItemDetailViewController.xib in Resources */,
 				6DEF2D13188FA0BB00BC1A2E /* MainMenuViewController.xib in Resources */,
 				6DEF2CE7188F9D8D00BC1A2E /* Images.xcassets in Resources */,
 			);
@@ -286,6 +295,7 @@
 				6DEF2D21188FAC2B00BC1A2E /* ItemsListViewController.m in Sources */,
 				6DEF2CE5188F9D8D00BC1A2E /* ProductGPS.xcdatamodeld in Sources */,
 				6DEF2CDE188F9D8D00BC1A2E /* main.m in Sources */,
+				6DEF2D2B188FAE1200BC1A2E /* ItemDetailViewController.m in Sources */,
 				6DEF2D09188F9E0000BC1A2E /* AppDelegate.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
