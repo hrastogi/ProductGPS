@@ -7,6 +7,7 @@
 //
 
 #import "ItemsListViewController.h"
+#import "ItemListCell.h"
 
 @interface ItemsListViewController ()
 
@@ -34,5 +35,38 @@
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
 }
+
+#pragma mark - UITableView Datasource
+- (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView{
+    return 1;
+}
+
+- (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section{
+    return 7;
+}
+
+- (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath{
+    
+    static NSString *itemListCellIdentifier = @"ItemListCell";
+    
+    ItemListCell *cell = (ItemListCell *)[tableView dequeueReusableCellWithIdentifier:itemListCellIdentifier];
+    if (cell == nil)
+    {
+        NSArray *nib = [[NSBundle mainBundle] loadNibNamed:@"ItemListCell" owner:self options:nil];
+        cell = [nib objectAtIndex:0];
+    }
+    
+       return cell;
+}
+
+#pragma mark - UITableView Delegate
+- (CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath{
+    return 80.0f;
+}
+
+- (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath{
+   
+}
+
 
 @end

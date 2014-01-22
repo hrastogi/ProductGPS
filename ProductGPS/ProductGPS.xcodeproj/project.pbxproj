@@ -28,6 +28,9 @@
 		6DEF2D3C188FAE9D00BC1A2E /* ItemsListViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6DEF2D34188FAE9D00BC1A2E /* ItemsListViewController.xib */; };
 		6DEF2D3D188FAE9D00BC1A2E /* MainMenuViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6DEF2D37188FAE9D00BC1A2E /* MainMenuViewController.m */; };
 		6DEF2D3E188FAE9D00BC1A2E /* MainMenuViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6DEF2D38188FAE9D00BC1A2E /* MainMenuViewController.xib */; };
+		6DEF2D47188FBC0300BC1A2E /* ItemListCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 6DEF2D46188FBC0300BC1A2E /* ItemListCell.m */; };
+		6DEF2D49188FBC1D00BC1A2E /* ItemListCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6DEF2D48188FBC1D00BC1A2E /* ItemListCell.xib */; };
+		6DEF2D4B188FBD2700BC1A2E /* blackTshirt.png in Resources */ = {isa = PBXBuildFile; fileRef = 6DEF2D4A188FBD2700BC1A2E /* blackTshirt.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -68,6 +71,10 @@
 		6DEF2D36188FAE9D00BC1A2E /* MainMenuViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MainMenuViewController.h; sourceTree = "<group>"; };
 		6DEF2D37188FAE9D00BC1A2E /* MainMenuViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MainMenuViewController.m; sourceTree = "<group>"; };
 		6DEF2D38188FAE9D00BC1A2E /* MainMenuViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MainMenuViewController.xib; sourceTree = "<group>"; };
+		6DEF2D45188FBC0300BC1A2E /* ItemListCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ItemListCell.h; sourceTree = "<group>"; };
+		6DEF2D46188FBC0300BC1A2E /* ItemListCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ItemListCell.m; sourceTree = "<group>"; };
+		6DEF2D48188FBC1D00BC1A2E /* ItemListCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ItemListCell.xib; sourceTree = "<group>"; };
+		6DEF2D4A188FBD2700BC1A2E /* blackTshirt.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = blackTshirt.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -200,6 +207,8 @@
 		6DEF2D31188FAE9D00BC1A2E /* Item List VC */ = {
 			isa = PBXGroup;
 			children = (
+				6DEF2D44188FBBF300BC1A2E /* Cells */,
+				6DEF2D40188FAEED00BC1A2E /* Images */,
 				6DEF2D32188FAE9D00BC1A2E /* ItemsListViewController.h */,
 				6DEF2D33188FAE9D00BC1A2E /* ItemsListViewController.m */,
 				6DEF2D34188FAE9D00BC1A2E /* ItemsListViewController.xib */,
@@ -215,6 +224,24 @@
 				6DEF2D38188FAE9D00BC1A2E /* MainMenuViewController.xib */,
 			);
 			path = "Main Menu VC";
+			sourceTree = "<group>";
+		};
+		6DEF2D40188FAEED00BC1A2E /* Images */ = {
+			isa = PBXGroup;
+			children = (
+				6DEF2D4A188FBD2700BC1A2E /* blackTshirt.png */,
+			);
+			path = Images;
+			sourceTree = "<group>";
+		};
+		6DEF2D44188FBBF300BC1A2E /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+				6DEF2D45188FBC0300BC1A2E /* ItemListCell.h */,
+				6DEF2D46188FBC0300BC1A2E /* ItemListCell.m */,
+				6DEF2D48188FBC1D00BC1A2E /* ItemListCell.xib */,
+			);
+			path = Cells;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -294,7 +321,9 @@
 			files = (
 				6DEF2CDC188F9D8D00BC1A2E /* InfoPlist.strings in Resources */,
 				6DEF2D3C188FAE9D00BC1A2E /* ItemsListViewController.xib in Resources */,
+				6DEF2D49188FBC1D00BC1A2E /* ItemListCell.xib in Resources */,
 				6DEF2CE7188F9D8D00BC1A2E /* Images.xcassets in Resources */,
+				6DEF2D4B188FBD2700BC1A2E /* blackTshirt.png in Resources */,
 				6DEF2D3E188FAE9D00BC1A2E /* MainMenuViewController.xib in Resources */,
 				6DEF2D3A188FAE9D00BC1A2E /* ItemDetailViewController.xib in Resources */,
 			);
@@ -321,6 +350,7 @@
 				6DEF2D39188FAE9D00BC1A2E /* ItemDetailViewController.m in Sources */,
 				6DEF2D3D188FAE9D00BC1A2E /* MainMenuViewController.m in Sources */,
 				6DEF2D09188F9E0000BC1A2E /* AppDelegate.m in Sources */,
+				6DEF2D47188FBC0300BC1A2E /* ItemListCell.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

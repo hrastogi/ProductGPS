@@ -8,6 +8,8 @@
 
 #import <UIKit/UIKit.h>
 
-@interface ItemsListViewController : UIViewController
-
+@class ItemListCell;
+@interface ItemsListViewController : UIViewController <UITableViewDelegate,UITableViewDataSource>
+@property (nonatomic) IBOutlet UITableView *itemListTableView;
+@property (nonatomic,weak) IBOutlet ItemListCell *itemCell;
 @end
