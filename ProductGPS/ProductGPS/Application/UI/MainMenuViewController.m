@@ -7,6 +7,7 @@
 //
 
 #import "MainMenuViewController.h"
+#import "ItemsListViewController.h"
 
 @interface MainMenuViewController ()
 
@@ -62,6 +63,11 @@
 #pragma mark - UITableView Delegate
 - (CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath{
     return 44.0f;
+}
+
+- (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath{
+    ItemsListViewController *itemsListVC = [[ItemsListViewController alloc] initWithNibName:@"ItemsListViewController" bundle:nil];
+    [self.navigationController pushViewController:itemsListVC animated:YES];
 }
 
 @end

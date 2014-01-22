@@ -24,6 +24,8 @@
 		6DEF2D09188F9E0000BC1A2E /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 6DEF2D07188F9E0000BC1A2E /* AppDelegate.m */; };
 		6DEF2D12188FA0BB00BC1A2E /* MainMenuViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6DEF2D10188FA0BA00BC1A2E /* MainMenuViewController.m */; };
 		6DEF2D13188FA0BB00BC1A2E /* MainMenuViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6DEF2D11188FA0BA00BC1A2E /* MainMenuViewController.xib */; };
+		6DEF2D21188FAC2B00BC1A2E /* ItemsListViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6DEF2D1F188FAC2B00BC1A2E /* ItemsListViewController.m */; };
+		6DEF2D22188FAC2B00BC1A2E /* ItemsListViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6DEF2D20188FAC2B00BC1A2E /* ItemsListViewController.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -58,6 +60,9 @@
 		6DEF2D0F188FA0BA00BC1A2E /* MainMenuViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MainMenuViewController.h; sourceTree = "<group>"; };
 		6DEF2D10188FA0BA00BC1A2E /* MainMenuViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MainMenuViewController.m; sourceTree = "<group>"; };
 		6DEF2D11188FA0BA00BC1A2E /* MainMenuViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MainMenuViewController.xib; sourceTree = "<group>"; };
+		6DEF2D1E188FAC2B00BC1A2E /* ItemsListViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ItemsListViewController.h; sourceTree = "<group>"; };
+		6DEF2D1F188FAC2B00BC1A2E /* ItemsListViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ItemsListViewController.m; sourceTree = "<group>"; };
+		6DEF2D20188FAC2B00BC1A2E /* ItemsListViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ItemsListViewController.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -173,6 +178,9 @@
 				6DEF2D0F188FA0BA00BC1A2E /* MainMenuViewController.h */,
 				6DEF2D10188FA0BA00BC1A2E /* MainMenuViewController.m */,
 				6DEF2D11188FA0BA00BC1A2E /* MainMenuViewController.xib */,
+				6DEF2D1E188FAC2B00BC1A2E /* ItemsListViewController.h */,
+				6DEF2D1F188FAC2B00BC1A2E /* ItemsListViewController.m */,
+				6DEF2D20188FAC2B00BC1A2E /* ItemsListViewController.xib */,
 			);
 			path = UI;
 			sourceTree = "<group>";
@@ -253,6 +261,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				6DEF2CDC188F9D8D00BC1A2E /* InfoPlist.strings in Resources */,
+				6DEF2D22188FAC2B00BC1A2E /* ItemsListViewController.xib in Resources */,
 				6DEF2D13188FA0BB00BC1A2E /* MainMenuViewController.xib in Resources */,
 				6DEF2CE7188F9D8D00BC1A2E /* Images.xcassets in Resources */,
 			);
@@ -274,6 +283,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				6DEF2D12188FA0BB00BC1A2E /* MainMenuViewController.m in Sources */,
+				6DEF2D21188FAC2B00BC1A2E /* ItemsListViewController.m in Sources */,
 				6DEF2CE5188F9D8D00BC1A2E /* ProductGPS.xcdatamodeld in Sources */,
 				6DEF2CDE188F9D8D00BC1A2E /* main.m in Sources */,
 				6DEF2D09188F9E0000BC1A2E /* AppDelegate.m in Sources */,
@@ -477,6 +487,7 @@
 				6DEF2D00188F9D8D00BC1A2E /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		6DEF2D01188F9D8D00BC1A2E /* Build configuration list for PBXNativeTarget "ProductGPSTests" */ = {
 			isa = XCConfigurationList;
@@ -485,6 +496,7 @@
 				6DEF2D03188F9D8D00BC1A2E /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 
