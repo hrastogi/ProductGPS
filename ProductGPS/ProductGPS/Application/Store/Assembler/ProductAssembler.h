@@ -11,5 +11,5 @@
 @class Product;
 @interface ProductAssembler : NSObject
 +(ProductAssembler*) sharedInstance;
--(Product*)createProductFromJsonResponse:(id) jsonResponse;
+-(NSArray*)createProductSFromJsonResponse:(NSDictionary*)jsonResponse;
 @end

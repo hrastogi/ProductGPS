@@ -51,6 +51,7 @@
     [operation setCompletionBlockWithSuccess:^(AFHTTPRequestOperation *operation, id responseObject) {
         
         NSLog(@"response:%@",responseObject);
+        [self didLoadProduct:responseObject];
         
     } failure:^(AFHTTPRequestOperation *operation, NSError *error) {
         
