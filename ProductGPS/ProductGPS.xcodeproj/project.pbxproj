@@ -28,6 +28,7 @@
 		6D6745BB18DE5FF2002EF799 /* UIRefreshControl+AFNetworking.m in Sources */ = {isa = PBXBuildFile; fileRef = 6D6745A918DE5FF2002EF799 /* UIRefreshControl+AFNetworking.m */; };
 		6D6745BC18DE5FF2002EF799 /* UIWebView+AFNetworking.m in Sources */ = {isa = PBXBuildFile; fileRef = 6D6745AB18DE5FF2002EF799 /* UIWebView+AFNetworking.m */; };
 		6D6745C018DE6075002EF799 /* ProductStore.m in Sources */ = {isa = PBXBuildFile; fileRef = 6D6745BF18DE6075002EF799 /* ProductStore.m */; };
+		6D6745C218DE6379002EF799 /* AdSupport.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6D6745C118DE6379002EF799 /* AdSupport.framework */; };
 		6DEF2CD0188F9D8D00BC1A2E /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6DEF2CCF188F9D8D00BC1A2E /* Foundation.framework */; };
 		6DEF2CD2188F9D8D00BC1A2E /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6DEF2CD1188F9D8D00BC1A2E /* CoreGraphics.framework */; };
 		6DEF2CD4188F9D8D00BC1A2E /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6DEF2CD3188F9D8D00BC1A2E /* UIKit.framework */; };
@@ -106,6 +107,7 @@
 		6D6745AB18DE5FF2002EF799 /* UIWebView+AFNetworking.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIWebView+AFNetworking.m"; sourceTree = "<group>"; };
 		6D6745BE18DE6075002EF799 /* ProductStore.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ProductStore.h; sourceTree = "<group>"; };
 		6D6745BF18DE6075002EF799 /* ProductStore.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ProductStore.m; sourceTree = "<group>"; };
+		6D6745C118DE6379002EF799 /* AdSupport.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AdSupport.framework; path = System/Library/Frameworks/AdSupport.framework; sourceTree = SDKROOT; };
 		6DEF2CCC188F9D8D00BC1A2E /* ProductGPS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ProductGPS.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		6DEF2CCF188F9D8D00BC1A2E /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		6DEF2CD1188F9D8D00BC1A2E /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -144,6 +146,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6D6745C218DE6379002EF799 /* AdSupport.framework in Frameworks */,
 				6D67458418DE5F60002EF799 /* CFNetwork.framework in Frameworks */,
 				6D67458218DE5F59002EF799 /* SystemConfiguration.framework in Frameworks */,
 				6D67458018DE5F50002EF799 /* MobileCoreServices.framework in Frameworks */,
@@ -258,6 +261,7 @@
 		6DEF2CCE188F9D8D00BC1A2E /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				6D6745C118DE6379002EF799 /* AdSupport.framework */,
 				6D67458318DE5F60002EF799 /* CFNetwork.framework */,
 				6D67458118DE5F59002EF799 /* SystemConfiguration.framework */,
 				6D67457F18DE5F50002EF799 /* MobileCoreServices.framework */,

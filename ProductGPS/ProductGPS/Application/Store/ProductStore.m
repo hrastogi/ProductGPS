@@ -7,8 +7,13 @@
 //
 
 #import "ProductStore.h"
-static NSString * const BaseURLString = @"http://www.raywenderlich.com/demos/weather_sample/";
+#import <AdSupport/AdSupport.h>
+//static NSString * const BaseURLString = @"http://www.raywenderlich.com/demos/weather_sample/";
+#define API_TEST_KEY @"TAVSjur9pYu8jeKGuFojLVXsqo4SNDM1"
 
+@interface ProductStore()
+@property (nonatomic) NSString *advId;
+@end
 @implementation ProductStore
 
 +(ProductStore*)sharedInstance
@@ -22,12 +27,20 @@ static NSString * const BaseURLString = @"http://www.raywenderlich.com/demos/wea
 }
 
 
+
 #pragma mark - Fetch Methods
 
+-(void) getProductWithName:(NSString*)name andKeyword:(NSString*)keyword{
+}
+
 -(void) requestData{
+    id adIdObject = [ASIdentifierManager sharedManager].advertisingIdentifier;
+    NSLog(@"Adv Id: %@",adIdObject);
+    
     // 1
-    NSString *string = [NSString stringWithFormat:@"%@weather.php?format=json", BaseURLString];
-    NSURL *url = [NSURL URLWithString:string];
+    NSString *urlStr = @"http://api.retailigence.com/v2.0/products?apikey=TAVSjur9pYu8jeKGuFojLVXsqo4SNDM1&requestorid=%3C__NSConcreteUUID%200x9b94370%3E%20AAD91CEA-E126-4513-B022-FAC48647E461&userlocation=94301&productType=clothing&keywords=dress";
+    NSLog(@"URLSTR:%@",urlStr);
+    NSURL *url = [NSURL URLWithString:urlStr];
     NSURLRequest *request = [NSURLRequest requestWithURL:url];
     
     // 2
@@ -40,7 +53,6 @@ static NSString * const BaseURLString = @"http://www.raywenderlich.com/demos/wea
         
     } failure:^(AFHTTPRequestOperation *operation, NSError *error) {
         
-        // 4
         UIAlertView *alertView = [[UIAlertView alloc] initWithTitle:@"Error Retrieving Weather"
                                                             message:[error localizedDescription]
                                                            delegate:nil
@@ -48,8 +60,6 @@ static NSString * const BaseURLString = @"http://www.raywenderlich.com/demos/wea
                                                   otherButtonTitles:nil];
         [alertView show];
     }];
-    
-    // 5
     [operation start];
 }
 
