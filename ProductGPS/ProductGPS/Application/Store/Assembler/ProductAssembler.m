@@ -21,10 +21,8 @@
 }
 
 #pragma mark - Assembler
--(NSArray*)createProductSFromJsonResponse:(NSDictionary*)jsonResponse{
-    NSMutableArray *products = [NSMutableArray array];
-    NSArray *results = [jsonResponse objectForKey:@"results"];
-   
+-(NSArray*)createProductSFromJsonResponse:(NSDictionary*)results{
+    NSMutableArray *products = [NSMutableArray array];   
     for (NSDictionary *result in results){
         Product *product  = [[Product alloc] init];
         NSDictionary *searchResult =[result objectForKey:@"searchResult"];

@@ -52,7 +52,6 @@
     static NSString *cellIdentifier = @"MenuCell";
     UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:cellIdentifier];
     
-    //5.1 you do not need this if you have set SettingsCell as identifier in the storyboard (else you can remove the comments on this code)
     if (cell == nil){
             cell = [[UITableViewCell alloc] initWithStyle:UITableViewCellStyleSubtitle reuseIdentifier:cellIdentifier];
       }
@@ -67,10 +66,23 @@
 }
 
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath{
-    [[ProductStore sharedInstance] requestData];
     
-    ItemsListViewController *itemsListVC = [[ItemsListViewController alloc] initWithNibName:@"ItemsListViewController" bundle:nil];
-    [self.navigationController pushViewController:itemsListVC animated:YES];
+    PSCompletionBlock callback = ^(NSError *error){
+        if(error){
+            NSLog(@"Oops error : %@",error.localizedDescription);
+        }
+        else{
+            
+            // We have recieved data, push the item list view on stack.
+            ItemsListViewController *itemsListVC = [[ItemsListViewController alloc] initWithNibName:@"ItemsListViewController" bundle:nil];
+            itemsListVC.products = [ProductStore sharedInstance].products;
+            [self.navigationController pushViewController:itemsListVC animated:YES];
+        }
+    };
+    
+    [[ProductStore sharedInstance] requestDataWithCallback:callback];
+    
+    
 }
 
 @end

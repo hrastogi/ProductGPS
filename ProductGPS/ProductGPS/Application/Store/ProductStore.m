@@ -6,9 +6,10 @@
 //  Copyright (c) 2014 Heena. All rights reserved.
 //
 
-#import "ProductStore.h"
 #import <AdSupport/AdSupport.h>
+#import "ProductStore.h"
 #import "Product.h"
+#import "ProductAssembler.h"
 
 #define API_TEST_KEY @"TAVSjur9pYu8jeKGuFojLVXsqo4SNDM1"
 
@@ -34,39 +35,35 @@
 -(void) getProductWithName:(NSString*)name andKeyword:(NSString*)keyword{
 }
 
--(void) requestData{
+-(void) requestDataWithCallback:(PSCompletionBlock)callback{
     id adIdObject = [ASIdentifierManager sharedManager].advertisingIdentifier;
     NSLog(@"Adv Id: %@",adIdObject);
     
-    // 1
     NSString *urlStr = @"http://api.retailigence.com/v2.0/products?apikey=TAVSjur9pYu8jeKGuFojLVXsqo4SNDM1&requestorid=%3C__NSConcreteUUID%200x9b94370%3E%20AAD91CEA-E126-4513-B022-FAC48647E461&userlocation=94301&productType=clothing&keywords=dress";
     NSLog(@"URLSTR:%@",urlStr);
     NSURL *url = [NSURL URLWithString:urlStr];
     NSURLRequest *request = [NSURLRequest requestWithURL:url];
     
-    // 2
+   
     AFHTTPRequestOperation *operation = [[AFHTTPRequestOperation alloc] initWithRequest:request];
     operation.responseSerializer = [AFJSONResponseSerializer serializer];
     
     [operation setCompletionBlockWithSuccess:^(AFHTTPRequestOperation *operation, id responseObject) {
-        
-        NSLog(@"response:%@",responseObject);
-        [self didLoadProduct:responseObject];
+       
+        [self didLoadProduct:responseObject witheCallback:callback];
         
     } failure:^(AFHTTPRequestOperation *operation, NSError *error) {
         
-        UIAlertView *alertView = [[UIAlertView alloc] initWithTitle:@"Error Retrieving Weather"
-                                                            message:[error localizedDescription]
-                                                           delegate:nil
-                                                  cancelButtonTitle:@"Ok"
-                                                  otherButtonTitles:nil];
-        [alertView show];
+        callback(error);
     }];
     [operation start];
 }
 
--(void)didLoadProduct:(id)respone{
-
+-(void)didLoadProduct:(id)response witheCallback:(PSCompletionBlock)callback{
+    NSDictionary *retailigenceResult = [response objectForKey:@"RetailigenceSearchResult"];
+    NSArray *results = [retailigenceResult objectForKey:@"results"];
+    self.products = [[ProductAssembler sharedInstance] createProductSFromJsonResponse:results];
+    callback(nil);
 }
 
 

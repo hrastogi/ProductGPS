@@ -11,5 +11,6 @@
 @class ItemListCell;
 @interface ItemsListViewController : UIViewController <UITableViewDelegate,UITableViewDataSource>
 @property (nonatomic) IBOutlet UITableView *itemListTableView;
+@property (nonatomic) NSArray *products;
 @property (nonatomic,weak) IBOutlet ItemListCell *itemCell;
 @end

@@ -7,9 +7,13 @@
 //
 
 #import <Foundation/Foundation.h>
+typedef void (^PSCompletionBlock)(NSError *error);
+//typedef void (^ASCompletionBlock)(BOOL success, NSDictionary *response, NSError *error);
 
 @interface ProductStore : NSObject
+@property (nonatomic)NSArray *products;
+
 +(ProductStore*) sharedInstance;
--(void) requestData;
+-(void) requestDataWithCallback:(PSCompletionBlock)callback;
 
 @end
