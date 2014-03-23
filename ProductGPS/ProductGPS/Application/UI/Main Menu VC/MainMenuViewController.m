@@ -8,6 +8,7 @@
 
 #import "MainMenuViewController.h"
 #import "ItemsListViewController.h"
+#import "ProductStore.h"
 
 @interface MainMenuViewController ()
 
@@ -66,6 +67,8 @@
 }
 
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath{
+    [[ProductStore sharedInstance] requestData];
+    
     ItemsListViewController *itemsListVC = [[ItemsListViewController alloc] initWithNibName:@"ItemsListViewController" bundle:nil];
     [self.navigationController pushViewController:itemsListVC animated:YES];
 }
