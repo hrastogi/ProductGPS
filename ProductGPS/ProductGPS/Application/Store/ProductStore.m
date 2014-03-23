@@ -8,7 +8,8 @@
 
 #import "ProductStore.h"
 #import <AdSupport/AdSupport.h>
-//static NSString * const BaseURLString = @"http://www.raywenderlich.com/demos/weather_sample/";
+#import "Product.h"
+
 #define API_TEST_KEY @"TAVSjur9pYu8jeKGuFojLVXsqo4SNDM1"
 
 @interface ProductStore()
@@ -62,5 +63,10 @@
     }];
     [operation start];
 }
+
+-(void)didLoadProduct:(id)respone{
+
+}
+
 
 @end
