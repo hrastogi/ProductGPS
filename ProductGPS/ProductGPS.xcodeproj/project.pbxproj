@@ -27,11 +27,13 @@
 		6D6745BA18DE5FF2002EF799 /* UIProgressView+AFNetworking.m in Sources */ = {isa = PBXBuildFile; fileRef = 6D6745A718DE5FF2002EF799 /* UIProgressView+AFNetworking.m */; };
 		6D6745BB18DE5FF2002EF799 /* UIRefreshControl+AFNetworking.m in Sources */ = {isa = PBXBuildFile; fileRef = 6D6745A918DE5FF2002EF799 /* UIRefreshControl+AFNetworking.m */; };
 		6D6745BC18DE5FF2002EF799 /* UIWebView+AFNetworking.m in Sources */ = {isa = PBXBuildFile; fileRef = 6D6745AB18DE5FF2002EF799 /* UIWebView+AFNetworking.m */; };
-		6D6745C018DE6075002EF799 /* ProductStore.m in Sources */ = {isa = PBXBuildFile; fileRef = 6D6745BF18DE6075002EF799 /* ProductStore.m */; };
+		6D6745C018DE6075002EF799 /* PGPSProductStore.m in Sources */ = {isa = PBXBuildFile; fileRef = 6D6745BF18DE6075002EF799 /* PGPSProductStore.m */; };
 		6D6745C218DE6379002EF799 /* AdSupport.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6D6745C118DE6379002EF799 /* AdSupport.framework */; };
 		6D6745C618DEC079002EF799 /* Product.m in Sources */ = {isa = PBXBuildFile; fileRef = 6D6745C518DEC079002EF799 /* Product.m */; };
 		6D6745C918DEC1D6002EF799 /* Address.m in Sources */ = {isa = PBXBuildFile; fileRef = 6D6745C818DEC1D6002EF799 /* Address.m */; };
 		6D6745CD18DEC35D002EF799 /* ProductAssembler.m in Sources */ = {isa = PBXBuildFile; fileRef = 6D6745CC18DEC35D002EF799 /* ProductAssembler.m */; };
+		6D6745CF18E93BFA002EF799 /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6D6745CE18E93BF8002EF799 /* CoreLocation.framework */; };
+		6D6745D218E940A0002EF799 /* PGPSLocationManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 6D6745D118E940A0002EF799 /* PGPSLocationManager.m */; };
 		6DEF2CD0188F9D8D00BC1A2E /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6DEF2CCF188F9D8D00BC1A2E /* Foundation.framework */; };
 		6DEF2CD2188F9D8D00BC1A2E /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6DEF2CD1188F9D8D00BC1A2E /* CoreGraphics.framework */; };
 		6DEF2CD4188F9D8D00BC1A2E /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6DEF2CD3188F9D8D00BC1A2E /* UIKit.framework */; };
@@ -108,8 +110,8 @@
 		6D6745A918DE5FF2002EF799 /* UIRefreshControl+AFNetworking.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIRefreshControl+AFNetworking.m"; sourceTree = "<group>"; };
 		6D6745AA18DE5FF2002EF799 /* UIWebView+AFNetworking.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIWebView+AFNetworking.h"; sourceTree = "<group>"; };
 		6D6745AB18DE5FF2002EF799 /* UIWebView+AFNetworking.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIWebView+AFNetworking.m"; sourceTree = "<group>"; };
-		6D6745BE18DE6075002EF799 /* ProductStore.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ProductStore.h; sourceTree = "<group>"; };
-		6D6745BF18DE6075002EF799 /* ProductStore.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ProductStore.m; sourceTree = "<group>"; };
+		6D6745BE18DE6075002EF799 /* PGPSProductStore.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PGPSProductStore.h; sourceTree = "<group>"; };
+		6D6745BF18DE6075002EF799 /* PGPSProductStore.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PGPSProductStore.m; sourceTree = "<group>"; };
 		6D6745C118DE6379002EF799 /* AdSupport.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AdSupport.framework; path = System/Library/Frameworks/AdSupport.framework; sourceTree = SDKROOT; };
 		6D6745C418DEC079002EF799 /* Product.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Product.h; sourceTree = "<group>"; };
 		6D6745C518DEC079002EF799 /* Product.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Product.m; sourceTree = "<group>"; };
@@ -117,6 +119,9 @@
 		6D6745C818DEC1D6002EF799 /* Address.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Address.m; sourceTree = "<group>"; };
 		6D6745CB18DEC35D002EF799 /* ProductAssembler.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ProductAssembler.h; sourceTree = "<group>"; };
 		6D6745CC18DEC35D002EF799 /* ProductAssembler.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ProductAssembler.m; sourceTree = "<group>"; };
+		6D6745CE18E93BF8002EF799 /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
+		6D6745D018E940A0002EF799 /* PGPSLocationManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PGPSLocationManager.h; sourceTree = "<group>"; };
+		6D6745D118E940A0002EF799 /* PGPSLocationManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PGPSLocationManager.m; sourceTree = "<group>"; };
 		6DEF2CCC188F9D8D00BC1A2E /* ProductGPS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ProductGPS.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		6DEF2CCF188F9D8D00BC1A2E /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		6DEF2CD1188F9D8D00BC1A2E /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -155,6 +160,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6D6745CF18E93BFA002EF799 /* CoreLocation.framework in Frameworks */,
 				6D6745C218DE6379002EF799 /* AdSupport.framework in Frameworks */,
 				6D67458418DE5F60002EF799 /* CFNetwork.framework in Frameworks */,
 				6D67458218DE5F59002EF799 /* SystemConfiguration.framework in Frameworks */,
@@ -244,8 +250,10 @@
 			children = (
 				6D6745CA18DEC34B002EF799 /* Assembler */,
 				6D6745C318DEC062002EF799 /* Models */,
-				6D6745BE18DE6075002EF799 /* ProductStore.h */,
-				6D6745BF18DE6075002EF799 /* ProductStore.m */,
+				6D6745BE18DE6075002EF799 /* PGPSProductStore.h */,
+				6D6745BF18DE6075002EF799 /* PGPSProductStore.m */,
+				6D6745D018E940A0002EF799 /* PGPSLocationManager.h */,
+				6D6745D118E940A0002EF799 /* PGPSLocationManager.m */,
 			);
 			path = Store;
 			sourceTree = "<group>";
@@ -292,6 +300,7 @@
 		6DEF2CCE188F9D8D00BC1A2E /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				6D6745CE18E93BF8002EF799 /* CoreLocation.framework */,
 				6D6745C118DE6379002EF799 /* AdSupport.framework */,
 				6D67458318DE5F60002EF799 /* CFNetwork.framework */,
 				6D67458118DE5F59002EF799 /* SystemConfiguration.framework */,
@@ -464,6 +473,9 @@
 				LastUpgradeCheck = 0500;
 				ORGANIZATIONNAME = Heena;
 				TargetAttributes = {
+					6DEF2CCB188F9D8D00BC1A2E = {
+						DevelopmentTeam = 2HP6RWL943;
+					};
 					6DEF2CEB188F9D8D00BC1A2E = {
 						TestTargetID = 6DEF2CCB188F9D8D00BC1A2E;
 					};
@@ -521,6 +533,7 @@
 				6D6745C618DEC079002EF799 /* Product.m in Sources */,
 				6D6745B118DE5FF2002EF799 /* AFURLConnectionOperation.m in Sources */,
 				6DEF2CE5188F9D8D00BC1A2E /* ProductGPS.xcdatamodeld in Sources */,
+				6D6745D218E940A0002EF799 /* PGPSLocationManager.m in Sources */,
 				6D6745BA18DE5FF2002EF799 /* UIProgressView+AFNetworking.m in Sources */,
 				6DEF2D3B188FAE9D00BC1A2E /* ItemsListViewController.m in Sources */,
 				6D6745B718DE5FF2002EF799 /* UIAlertView+AFNetworking.m in Sources */,
@@ -532,7 +545,7 @@
 				6DEF2D39188FAE9D00BC1A2E /* ItemDetailViewController.m in Sources */,
 				6D6745B618DE5FF2002EF799 /* UIActivityIndicatorView+AFNetworking.m in Sources */,
 				6D6745B218DE5FF2002EF799 /* AFURLRequestSerialization.m in Sources */,
-				6D6745C018DE6075002EF799 /* ProductStore.m in Sources */,
+				6D6745C018DE6075002EF799 /* PGPSProductStore.m in Sources */,
 				6D6745B518DE5FF2002EF799 /* AFNetworkActivityIndicatorManager.m in Sources */,
 				6D6745B018DE5FF2002EF799 /* AFSecurityPolicy.m in Sources */,
 				6D6745AC18DE5FF2002EF799 /* AFHTTPRequestOperation.m in Sources */,
@@ -663,10 +676,13 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "ProductGPS/ProductGPS-Prefix.pch";
 				INFOPLIST_FILE = "ProductGPS/ProductGPS-Info.plist";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 				WRAPPER_EXTENSION = app;
 			};
 			name = Debug;
@@ -676,10 +692,13 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "ProductGPS/ProductGPS-Prefix.pch";
 				INFOPLIST_FILE = "ProductGPS/ProductGPS-Info.plist";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 				WRAPPER_EXTENSION = app;
 			};
 			name = Release;

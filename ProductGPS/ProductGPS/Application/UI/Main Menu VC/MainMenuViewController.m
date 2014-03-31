@@ -8,7 +8,7 @@
 
 #import "MainMenuViewController.h"
 #import "ItemsListViewController.h"
-#import "ProductStore.h"
+#import "PGPSProductStore.h"
 
 @interface MainMenuViewController ()
 
@@ -75,12 +75,12 @@
             
             // We have recieved data, push the item list view on stack.
             ItemsListViewController *itemsListVC = [[ItemsListViewController alloc] initWithNibName:@"ItemsListViewController" bundle:nil];
-            itemsListVC.products = [ProductStore sharedInstance].products;
+            itemsListVC.products = [PGPSProductStore sharedInstance].products;
             [self.navigationController pushViewController:itemsListVC animated:YES];
         }
     };
     
-    [[ProductStore sharedInstance] requestDataWithCallback:callback];
+    [[PGPSProductStore sharedInstance] requestDataWithCallback:callback];
     
     
 }

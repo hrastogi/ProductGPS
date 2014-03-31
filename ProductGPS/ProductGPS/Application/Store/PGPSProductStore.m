@@ -7,28 +7,26 @@
 //
 
 #import <AdSupport/AdSupport.h>
-#import "ProductStore.h"
+#import "PGPSProductStore.h"
 #import "Product.h"
 #import "ProductAssembler.h"
 
 #define API_TEST_KEY @"TAVSjur9pYu8jeKGuFojLVXsqo4SNDM1"
 
-@interface ProductStore()
+@interface PGPSProductStore()
 @property (nonatomic) NSString *advId;
 @end
-@implementation ProductStore
+@implementation PGPSProductStore
 
-+(ProductStore*)sharedInstance
++(PGPSProductStore*)sharedInstance
 {
     static dispatch_once_t token;
-    static  ProductStore *sharedInstance = nil;
+    static  PGPSProductStore *sharedInstance = nil;
     dispatch_once(&token, ^{
-        sharedInstance = [[ProductStore alloc] init];
+        sharedInstance = [[PGPSProductStore alloc] init];
     });
     return sharedInstance;
 }
-
-
 
 #pragma mark - Fetch Methods
 
@@ -65,6 +63,7 @@
     self.products = [[ProductAssembler sharedInstance] createProductSFromJsonResponse:results];
     callback(nil);
 }
+
 
 
 @end

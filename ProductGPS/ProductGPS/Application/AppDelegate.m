@@ -8,6 +8,7 @@
 
 #import "AppDelegate.h"
 #import "MainMenuViewController.h"
+#import "PGPSLocationManager.h"
 
 @implementation AppDelegate
 
@@ -24,6 +25,7 @@
     UINavigationController *nav = [[UINavigationController alloc]  initWithRootViewController:mainMenuVC];
     self.window.rootViewController = nav;
     [[UINavigationBar appearance] setBarTintColor:[UIColor colorWithRed:35.0f/255.0f green:176.0f/255.0f blue:236.0f/255.0f alpha:1.0f]];
+    [[PGPSLocationManager sharedInstance] startLocationManager];
 
     [self.window makeKeyAndVisible];
     return YES;

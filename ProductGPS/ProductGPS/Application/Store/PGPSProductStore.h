@@ -10,10 +10,10 @@
 typedef void (^PSCompletionBlock)(NSError *error);
 //typedef void (^ASCompletionBlock)(BOOL success, NSDictionary *response, NSError *error);
 
-@interface ProductStore : NSObject
+@interface PGPSProductStore : NSObject
 @property (nonatomic)NSArray *products;
 
-+(ProductStore*) sharedInstance;
++(PGPSProductStore*) sharedInstance;
 -(void) requestDataWithCallback:(PSCompletionBlock)callback;
 
 @end
