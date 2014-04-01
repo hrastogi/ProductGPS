@@ -9,7 +9,11 @@
 #import <Foundation/Foundation.h>
 #import <CoreLocation/CoreLocation.h>
 
-@interface PGPSLocationManager : NSObject <CLLocationManagerDelegate>
+@interface PGPSLocationManager : NSObject <CLLocationManagerDelegate>{
+}
+@property (nonatomic, retain) CLLocationManager *locationManager;
+@property (nonatomic) CLLocation *currentLocation;
+
 +(PGPSLocationManager*) sharedInstance;
 -(void) startLocationManager;
 

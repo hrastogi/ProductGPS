@@ -30,6 +30,7 @@
     [super viewDidLoad];
     // Do any additional setup after loading the view from its nib.
     self.menuItemsArray = [NSArray arrayWithObjects:@"Accessories",@"Coat", @"Dress",@"Lingerie",@"Shirt",@"Shoes",@"Skirt",nil];
+    
 }
 
 - (void)didReceiveMemoryWarning
