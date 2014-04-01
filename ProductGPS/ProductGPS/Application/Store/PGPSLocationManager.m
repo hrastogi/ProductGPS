@@ -51,12 +51,10 @@
              CLPlacemark *placemark = [placemarks objectAtIndex:0];
              NSLog(@"\nCurrent Location Detected\n");
              NSLog(@"placemark %@",placemark);
-             NSString *locatedAt = [[placemark.addressDictionary valueForKey:@"FormattedAddressLines"] componentsJoinedByString:@", "];
-             NSString *Address = [[NSString alloc]initWithString:locatedAt];
-             NSString *Area = [[NSString alloc]initWithString:placemark.locality];
-             NSString *Country = [[NSString alloc]initWithString:placemark.country];
-             NSString *CountryArea = [NSString stringWithFormat:@"%@, %@", Area,Country];
-             NSLog(@"%@",CountryArea);
+             NSLog(@"zipcode:%@",placemark.postalCode);
+             NSLog(@"Longitude:%f",self.currentLocation.coordinate.longitude);
+             NSLog(@"Latitude:%f",self.currentLocation.coordinate.longitude);
+             
          }
          else
          {
@@ -64,16 +62,6 @@
              NSLog(@"\nCurrent Location Not Detected\n");
             
          }
-         /*---- For more results
-          placemark.region);
-          placemark.country);
-          placemark.locality);
-          placemark.name);
-          placemark.ocean);
-          placemark.postalCode);
-          placemark.subLocality);
-          placemark.location);
-          ------*/
      }];
 }
 
