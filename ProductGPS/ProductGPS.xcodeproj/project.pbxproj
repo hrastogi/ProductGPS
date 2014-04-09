@@ -34,8 +34,9 @@
 		6D6745CD18DEC35D002EF799 /* ProductAssembler.m in Sources */ = {isa = PBXBuildFile; fileRef = 6D6745CC18DEC35D002EF799 /* ProductAssembler.m */; };
 		6D6745CF18E93BFA002EF799 /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6D6745CE18E93BF8002EF799 /* CoreLocation.framework */; };
 		6D6745D218E940A0002EF799 /* PGPSLocationManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 6D6745D118E940A0002EF799 /* PGPSLocationManager.m */; };
-		6DC8751D18F242B60046908A /* PGPSItemGridViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6DC8751B18F242B60046908A /* PGPSItemGridViewController.m */; };
-		6DC8751E18F242B60046908A /* PGPSItemGridViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6DC8751C18F242B60046908A /* PGPSItemGridViewController.xib */; };
+		6DD1CA7018F3C8D8007D383A /* PGPSItemGridViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6DD1CA6E18F3C8D8007D383A /* PGPSItemGridViewController.m */; };
+		6DD1CA7118F3C8D8007D383A /* PGPSItemGridViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6DD1CA6F18F3C8D8007D383A /* PGPSItemGridViewController.xib */; };
+		6DD1CA7318F51500007D383A /* NibCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6DD1CA7218F514FF007D383A /* NibCell.xib */; };
 		6DEF2CD0188F9D8D00BC1A2E /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6DEF2CCF188F9D8D00BC1A2E /* Foundation.framework */; };
 		6DEF2CD2188F9D8D00BC1A2E /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6DEF2CD1188F9D8D00BC1A2E /* CoreGraphics.framework */; };
 		6DEF2CD4188F9D8D00BC1A2E /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6DEF2CD3188F9D8D00BC1A2E /* UIKit.framework */; };
@@ -124,9 +125,10 @@
 		6D6745CE18E93BF8002EF799 /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
 		6D6745D018E940A0002EF799 /* PGPSLocationManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PGPSLocationManager.h; sourceTree = "<group>"; };
 		6D6745D118E940A0002EF799 /* PGPSLocationManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PGPSLocationManager.m; sourceTree = "<group>"; };
-		6DC8751A18F242B60046908A /* PGPSItemGridViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PGPSItemGridViewController.h; sourceTree = "<group>"; };
-		6DC8751B18F242B60046908A /* PGPSItemGridViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PGPSItemGridViewController.m; sourceTree = "<group>"; };
-		6DC8751C18F242B60046908A /* PGPSItemGridViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = PGPSItemGridViewController.xib; sourceTree = "<group>"; };
+		6DD1CA6D18F3C8D8007D383A /* PGPSItemGridViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = PGPSItemGridViewController.h; path = ProductGPS/Application/UI/PGPSItemGridViewController.h; sourceTree = SOURCE_ROOT; };
+		6DD1CA6E18F3C8D8007D383A /* PGPSItemGridViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = PGPSItemGridViewController.m; path = ProductGPS/Application/UI/PGPSItemGridViewController.m; sourceTree = SOURCE_ROOT; };
+		6DD1CA6F18F3C8D8007D383A /* PGPSItemGridViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = PGPSItemGridViewController.xib; path = ProductGPS/Application/UI/PGPSItemGridViewController.xib; sourceTree = SOURCE_ROOT; };
+		6DD1CA7218F514FF007D383A /* NibCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = NibCell.xib; path = ProductGPS/Application/UI/NibCell.xib; sourceTree = SOURCE_ROOT; };
 		6DEF2CCC188F9D8D00BC1A2E /* ProductGPS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ProductGPS.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		6DEF2CCF188F9D8D00BC1A2E /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		6DEF2CD1188F9D8D00BC1A2E /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -286,9 +288,10 @@
 		6DC8751918F2425C0046908A /* Item Grid VC */ = {
 			isa = PBXGroup;
 			children = (
-				6DC8751A18F242B60046908A /* PGPSItemGridViewController.h */,
-				6DC8751B18F242B60046908A /* PGPSItemGridViewController.m */,
-				6DC8751C18F242B60046908A /* PGPSItemGridViewController.xib */,
+				6DD1CA6D18F3C8D8007D383A /* PGPSItemGridViewController.h */,
+				6DD1CA6E18F3C8D8007D383A /* PGPSItemGridViewController.m */,
+				6DD1CA7218F514FF007D383A /* NibCell.xib */,
+				6DD1CA6F18F3C8D8007D383A /* PGPSItemGridViewController.xib */,
 			);
 			path = "Item Grid VC";
 			sourceTree = "<group>";
@@ -524,8 +527,9 @@
 				6DEF2D3C188FAE9D00BC1A2E /* ItemsListViewController.xib in Resources */,
 				6DEF2D49188FBC1D00BC1A2E /* ItemListCell.xib in Resources */,
 				6DEF2CE7188F9D8D00BC1A2E /* Images.xcassets in Resources */,
+				6DD1CA7318F51500007D383A /* NibCell.xib in Resources */,
 				6DEF2D4B188FBD2700BC1A2E /* blackTshirt.png in Resources */,
-				6DC8751E18F242B60046908A /* PGPSItemGridViewController.xib in Resources */,
+				6DD1CA7118F3C8D8007D383A /* PGPSItemGridViewController.xib in Resources */,
 				6DEF2D3E188FAE9D00BC1A2E /* MainMenuViewController.xib in Resources */,
 				6DEF2D3A188FAE9D00BC1A2E /* ItemDetailViewController.xib in Resources */,
 			);
@@ -561,7 +565,7 @@
 				6D6745B818DE5FF2002EF799 /* UIButton+AFNetworking.m in Sources */,
 				6DEF2D39188FAE9D00BC1A2E /* ItemDetailViewController.m in Sources */,
 				6D6745B618DE5FF2002EF799 /* UIActivityIndicatorView+AFNetworking.m in Sources */,
-				6DC8751D18F242B60046908A /* PGPSItemGridViewController.m in Sources */,
+				6DD1CA7018F3C8D8007D383A /* PGPSItemGridViewController.m in Sources */,
 				6D6745B218DE5FF2002EF799 /* AFURLRequestSerialization.m in Sources */,
 				6D6745C018DE6075002EF799 /* PGPSProductStore.m in Sources */,
 				6D6745B518DE5FF2002EF799 /* AFNetworkActivityIndicatorManager.m in Sources */,
