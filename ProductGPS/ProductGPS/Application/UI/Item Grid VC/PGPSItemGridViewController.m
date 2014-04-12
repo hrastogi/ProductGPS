@@ -39,7 +39,7 @@
     }
     self.dataArray = [[NSArray alloc] initWithObjects:firstSection, secondSection, nil];
     
-    [self.collectionView registerClass:[PGPSItemGridViewCell class] forCellWithReuseIdentifier:@"cvCell"];
+    [self.collectionView registerClass:[PGPSItemGridViewCell class] forCellWithReuseIdentifier:@"itemCell"];
     
     UICollectionViewFlowLayout *flowLayout = [[UICollectionViewFlowLayout alloc] init];
     [flowLayout setItemSize:CGSizeMake(150, 200)];
@@ -66,7 +66,7 @@
 
 -(UICollectionViewCell *)collectionView:(UICollectionView *)collectionView cellForItemAtIndexPath:(NSIndexPath *)indexPath {
     
-    static NSString *cellIdentifier = @"cvCell";
+    static NSString *cellIdentifier = @"itemCell";
     
     PGPSItemGridViewCell *cell = (PGPSItemGridViewCell *)[collectionView dequeueReusableCellWithReuseIdentifier:cellIdentifier forIndexPath:indexPath];
     
