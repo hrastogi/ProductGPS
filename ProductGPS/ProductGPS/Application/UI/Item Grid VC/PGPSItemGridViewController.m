@@ -7,7 +7,7 @@
 //
 
 #import "PGPSItemGridViewController.h"
-
+#import "CVCell.h"
 
 @interface PGPSItemGridViewController ()
 @property (nonatomic, strong) IBOutlet UICollectionView *collectionView;
@@ -37,8 +37,8 @@
         [secondSection addObject:[NSString stringWithFormat:@"item %d", i]];
     }
     self.dataArray = [[NSArray alloc] initWithObjects:firstSection, secondSection, nil];
-    UINib *cellNib = [UINib nibWithNibName:@"NibCell" bundle:nil];
-    [self.collectionView registerNib:cellNib forCellWithReuseIdentifier:@"cvCell"];
+    
+    [self.collectionView registerClass:[CVCell class] forCellWithReuseIdentifier:@"cvCell"];
     
     UICollectionViewFlowLayout *flowLayout = [[UICollectionViewFlowLayout alloc] init];
     [flowLayout setItemSize:CGSizeMake(100, 100)];
@@ -65,17 +65,15 @@
 
 -(UICollectionViewCell *)collectionView:(UICollectionView *)collectionView cellForItemAtIndexPath:(NSIndexPath *)indexPath {
     
+    static NSString *cellIdentifier = @"cvCell";
+    
+    CVCell *cell = (CVCell *)[collectionView dequeueReusableCellWithReuseIdentifier:cellIdentifier forIndexPath:indexPath];
+    
     NSMutableArray *data = [self.dataArray objectAtIndex:indexPath.section];
     
     NSString *cellData = [data objectAtIndex:indexPath.row];
     
-    static NSString *cellIdentifier = @"cvCell";
-    
-    UICollectionViewCell *cell = [collectionView dequeueReusableCellWithReuseIdentifier:cellIdentifier forIndexPath:indexPath];
-    
-    UILabel *titleLabel = (UILabel *)[cell viewWithTag:100];
-    
-    [titleLabel setText:cellData];
+    [cell.titleLabel setText:cellData];
     
     return cell;
     

@@ -37,6 +37,8 @@
 		6DD1CA7318F51500007D383A /* NibCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6DD1CA7218F514FF007D383A /* NibCell.xib */; };
 		6DD1CACC18F91BBD007D383A /* PGPSItemGridViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6DD1CACA18F91BBD007D383A /* PGPSItemGridViewController.m */; };
 		6DD1CACD18F91BBD007D383A /* PGPSItemGridViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6DD1CACB18F91BBD007D383A /* PGPSItemGridViewController.xib */; };
+		6DD1CACF18F91C27007D383A /* CVCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6DD1CACE18F91C27007D383A /* CVCell.xib */; };
+		6DD1CAD218F91C3D007D383A /* CVCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 6DD1CAD118F91C3D007D383A /* CVCell.m */; };
 		6DEF2CD0188F9D8D00BC1A2E /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6DEF2CCF188F9D8D00BC1A2E /* Foundation.framework */; };
 		6DEF2CD2188F9D8D00BC1A2E /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6DEF2CD1188F9D8D00BC1A2E /* CoreGraphics.framework */; };
 		6DEF2CD4188F9D8D00BC1A2E /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6DEF2CD3188F9D8D00BC1A2E /* UIKit.framework */; };
@@ -124,6 +126,9 @@
 		6DD1CAC918F91BBD007D383A /* PGPSItemGridViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PGPSItemGridViewController.h; sourceTree = "<group>"; };
 		6DD1CACA18F91BBD007D383A /* PGPSItemGridViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PGPSItemGridViewController.m; sourceTree = "<group>"; };
 		6DD1CACB18F91BBD007D383A /* PGPSItemGridViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = PGPSItemGridViewController.xib; sourceTree = "<group>"; };
+		6DD1CACE18F91C27007D383A /* CVCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CVCell.xib; sourceTree = "<group>"; };
+		6DD1CAD018F91C3D007D383A /* CVCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CVCell.h; sourceTree = "<group>"; };
+		6DD1CAD118F91C3D007D383A /* CVCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CVCell.m; sourceTree = "<group>"; };
 		6DEF2CCC188F9D8D00BC1A2E /* ProductGPS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ProductGPS.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		6DEF2CCF188F9D8D00BC1A2E /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		6DEF2CD1188F9D8D00BC1A2E /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -279,6 +284,9 @@
 				6DD1CAC918F91BBD007D383A /* PGPSItemGridViewController.h */,
 				6DD1CACA18F91BBD007D383A /* PGPSItemGridViewController.m */,
 				6DD1CACB18F91BBD007D383A /* PGPSItemGridViewController.xib */,
+				6DD1CACE18F91C27007D383A /* CVCell.xib */,
+				6DD1CAD018F91C3D007D383A /* CVCell.h */,
+				6DD1CAD118F91C3D007D383A /* CVCell.m */,
 			);
 			path = "Item Grid VC";
 			sourceTree = "<group>";
@@ -481,6 +489,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				6DEF2CDC188F9D8D00BC1A2E /* InfoPlist.strings in Resources */,
+				6DD1CACF18F91C27007D383A /* CVCell.xib in Resources */,
 				6DEF2CE7188F9D8D00BC1A2E /* Images.xcassets in Resources */,
 				6DD1CA7318F51500007D383A /* NibCell.xib in Resources */,
 				6DEF2D3E188FAE9D00BC1A2E /* MainMenuViewController.xib in Resources */,
@@ -517,6 +526,7 @@
 				6D6745B318DE5FF2002EF799 /* AFURLResponseSerialization.m in Sources */,
 				6D6745C918DEC1D6002EF799 /* Address.m in Sources */,
 				6D6745B818DE5FF2002EF799 /* UIButton+AFNetworking.m in Sources */,
+				6DD1CAD218F91C3D007D383A /* CVCell.m in Sources */,
 				6DEF2D39188FAE9D00BC1A2E /* ItemDetailViewController.m in Sources */,
 				6D6745B618DE5FF2002EF799 /* UIActivityIndicatorView+AFNetworking.m in Sources */,
 				6D6745B218DE5FF2002EF799 /* AFURLRequestSerialization.m in Sources */,
