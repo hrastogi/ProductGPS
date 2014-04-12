@@ -76,7 +76,7 @@
             
             // We have recieved data, push the item list view on stack.
             PGPSItemGridViewController *itemmsGridVC = [[PGPSItemGridViewController alloc] initWithNibName:@"PGPSItemGridViewController" bundle:nil];
-            //itemmsGridVC.products = [PGPSProductStore sharedInstance].products;
+            itemmsGridVC.products = [PGPSProductStore sharedInstance].products;
             [self.navigationController pushViewController:itemmsGridVC animated:YES];
         }
     };

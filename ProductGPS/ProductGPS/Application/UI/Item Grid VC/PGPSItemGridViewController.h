@@ -9,5 +9,5 @@
 #import <UIKit/UIKit.h>
 
 @interface PGPSItemGridViewController : UIViewController<UICollectionViewDataSource,UICollisionBehaviorDelegate>
-
+@property (nonatomic) NSArray *products;
 @end
