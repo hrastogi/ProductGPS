@@ -7,7 +7,8 @@
 //
 
 #import "PGPSItemGridViewController.h"
-#import "CVCell.h"
+#import "PGPSItemGridViewCell.h"
+
 
 @interface PGPSItemGridViewController ()
 @property (nonatomic, strong) IBOutlet UICollectionView *collectionView;
@@ -38,10 +39,10 @@
     }
     self.dataArray = [[NSArray alloc] initWithObjects:firstSection, secondSection, nil];
     
-    [self.collectionView registerClass:[CVCell class] forCellWithReuseIdentifier:@"cvCell"];
+    [self.collectionView registerClass:[PGPSItemGridViewCell class] forCellWithReuseIdentifier:@"cvCell"];
     
     UICollectionViewFlowLayout *flowLayout = [[UICollectionViewFlowLayout alloc] init];
-    [flowLayout setItemSize:CGSizeMake(100, 100)];
+    [flowLayout setItemSize:CGSizeMake(150, 200)];
     [flowLayout setScrollDirection:UICollectionViewScrollDirectionVertical];
     
     [self.collectionView setCollectionViewLayout:flowLayout];
@@ -67,7 +68,7 @@
     
     static NSString *cellIdentifier = @"cvCell";
     
-    CVCell *cell = (CVCell *)[collectionView dequeueReusableCellWithReuseIdentifier:cellIdentifier forIndexPath:indexPath];
+    PGPSItemGridViewCell *cell = (PGPSItemGridViewCell *)[collectionView dequeueReusableCellWithReuseIdentifier:cellIdentifier forIndexPath:indexPath];
     
     NSMutableArray *data = [self.dataArray objectAtIndex:indexPath.section];
     

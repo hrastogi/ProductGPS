@@ -1,5 +1,5 @@
 //
-//  CVCell.h
+//  PGPSItemGridViewCell.h
 //  ProductGPS
 //
 //  Created by HEENA RASTOGI on 4/12/14.
@@ -8,6 +8,6 @@
 
 #import <UIKit/UIKit.h>
 
-@interface CVCell : UICollectionViewCell
+@interface PGPSItemGridViewCell : UICollectionViewCell
 @property (nonatomic, strong) IBOutlet UILabel *titleLabel;
 @end

@@ -1,14 +1,14 @@
 //
-//  CVCell.m
+//  PGPSItemGridViewCell.m
 //  ProductGPS
 //
 //  Created by HEENA RASTOGI on 4/12/14.
 //  Copyright (c) 2014 Heena. All rights reserved.
 //
 
-#import "CVCell.h"
+#import "PGPSItemGridViewCell.h"
 
-@implementation CVCell
+@implementation PGPSItemGridViewCell
 
 - (id)initWithFrame:(CGRect)frame {
     
@@ -16,7 +16,7 @@
     
     if (self) {
         // Initialization code
-        NSArray *arrayOfViews = [[NSBundle mainBundle] loadNibNamed:@"CVCell" owner:self options:nil];
+        NSArray *arrayOfViews = [[NSBundle mainBundle] loadNibNamed:@"PGPSItemGridViewCell" owner:self options:nil];
         
         if ([arrayOfViews count] < 1) {
             return nil;
