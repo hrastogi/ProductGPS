@@ -8,6 +8,7 @@
 
 #import "Product.h"
 #import "Address.h"
+#import "Image.h"
 
 @implementation Product
 

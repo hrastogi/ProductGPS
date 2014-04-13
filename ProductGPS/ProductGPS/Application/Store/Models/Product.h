@@ -7,7 +7,7 @@
 //
 
 #import <Foundation/Foundation.h>
-@class Address;
+@class Address,Image;
 @interface Product : NSObject
 @property (nonatomic) NSString *name;
 @property (nonatomic) NSString *imageUrl;
@@ -18,5 +18,7 @@
 @property (nonatomic) NSString *phoneNumber;
 @property (nonatomic) Address *adress;
 @property (nonatomic) NSString *retailerName;
+@property (nonatomic) Image *largeImage;
+@property (nonatomic) Image *smallImage;
 
 @end

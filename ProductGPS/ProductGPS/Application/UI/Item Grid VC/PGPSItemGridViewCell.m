@@ -7,7 +7,14 @@
 //
 
 #import "PGPSItemGridViewCell.h"
+#import "Product.h"
 
+@interface PGPSItemGridViewCell()
+@property (nonatomic) IBOutlet UILabel *nameLabel;
+@property (nonatomic) IBOutlet UILabel *brandLabel;
+@property (nonatomic) IBOutlet UILabel *priceLabel;
+
+@end
 @implementation PGPSItemGridViewCell
 
 - (id)initWithFrame:(CGRect)frame {
@@ -34,6 +41,12 @@
     
 }
 
+-(void) updateCellWithProduct:(Product*) product{
+    self.nameLabel.text = product.name;
+    self.brandLabel.text = product.brand;
+    self.priceLabel.text = [NSString stringWithFormat:@"$%@",product.price];
+    
+}
 /*
 // Only override drawRect: if you perform custom drawing.
 // An empty implementation adversely affects performance during animation.

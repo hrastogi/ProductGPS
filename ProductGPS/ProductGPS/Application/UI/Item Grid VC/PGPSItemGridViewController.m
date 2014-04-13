@@ -8,6 +8,8 @@
 
 #import "PGPSItemGridViewController.h"
 #import "PGPSItemGridViewCell.h"
+#import "Product.h"
+#import "Image.h"
 
 
 @interface PGPSItemGridViewController ()
@@ -61,13 +63,29 @@
     static NSString *cellIdentifier = @"itemCell";
     
     PGPSItemGridViewCell *cell = (PGPSItemGridViewCell *)[collectionView dequeueReusableCellWithReuseIdentifier:cellIdentifier forIndexPath:indexPath];
-    
-  //  NSMutableArray *data = [self.dataArray objectAtIndex:indexPath.section];
    
-   // NSString *cellData = [data objectAtIndex:indexPath.row];
+    int index = indexPath.section;
+    if(!(indexPath.row%2)){
+        index++;
+    }
+    NSLog(@"index:%d",index);
+    Product *product = [self.products objectAtIndex:index];
+    [cell updateCellWithProduct:product];
     
-   // [cell.titleLabel setText:cellData];
+    NSURL *url = [NSURL URLWithString:product.smallImage.imageLink];
+    NSURLRequest *request = [NSURLRequest requestWithURL:url];
+    UIImage *placeholderImage = [UIImage imageNamed:@"katrina-kaif.png"];
     
+    __weak PGPSItemGridViewCell *weakcell = cell;
+    
+//    [cell.imageView setImageWithURLRequest:request
+//                          placeholderImage:placeholderImage
+//                                   success:^(NSURLRequest *request, NSHTTPURLResponse *response, UIImage *image) {
+//                                       
+//                                       weakCell.imageView.image = image;
+//                                       [weakCell setNeedsLayout];
+//                                       
+//                                   } failure:nil];
     return cell;
     
 }

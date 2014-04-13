@@ -8,6 +8,7 @@
 
 #import "ProductAssembler.h"
 #import "Product.h"
+#import "Image.h"
 
 @implementation ProductAssembler
 +(ProductAssembler*)sharedInstance
@@ -25,7 +26,7 @@
     NSMutableArray *products = [NSMutableArray array];   
     for (NSDictionary *result in results){
         Product *product  = [[Product alloc] init];
-        NSDictionary *searchResult =[result objectForKey:@"searchResult"];
+        NSDictionary *searchResult =[result objectForKey:@"SearchResult"];
         product = [self createProductFromDictionary:searchResult];
         [products addObject:product];
     }
@@ -38,6 +39,21 @@
     NSDictionary *productResponse = [searchResult objectForKey:@"product"];
     product.name = [productResponse objectForKey:@"name"];
     product.brand = [productResponse objectForKey:@"brand"];
+    product.price = [productResponse objectForKey:@"msrp"];
+    
+    NSArray *images = [productResponse objectForKey:@"images"];
+    for(NSDictionary *image in images){
+        NSDictionary *imageInfo = [image objectForKey:@"ImageInfo"];
+        NSString *imageName = [imageInfo objectForKey:@"imageName"];
+        if([imageName isEqualToString:@"LARGE"]){
+            product.largeImage.imageName = imageName;
+            product.largeImage.imageLink = [imageInfo objectForKey:@"link"];
+        }
+        else if ([imageName isEqualToString:@"SMALL"]){
+            product.smallImage.imageName = imageName;
+            product.smallImage.imageLink = [imageInfo objectForKey:@"link"];
+        }
+    }
     
     return product;
 }

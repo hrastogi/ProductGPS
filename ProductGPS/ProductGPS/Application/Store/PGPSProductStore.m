@@ -37,7 +37,7 @@
     id adIdObject = [ASIdentifierManager sharedManager].advertisingIdentifier;
     NSLog(@"Adv Id: %@",adIdObject);
     
-    NSString *urlStr = @"http://api.retailigence.com/v2.0/products?apikey=TAVSjur9pYu8jeKGuFojLVXsqo4SNDM1&requestorid=%3C__NSConcreteUUID%200x9b94370%3E%20AAD91CEA-E126-4513-B022-FAC48647E461&userlocation=94301&productType=clothing&keywords=dress";
+    NSString *urlStr = @"http://api.retailigence.com/v2.0/products?apikey=TAVSjur9pYu8jeKGuFojLVXsqo4SNDM1&requestorid=%3C__NSConcreteUUID%200x9b94370%3E%20AAD91CEA-E126-4513-B022-FAC48647E461&userlocation=94301&productType=clothing&keywords=skirt";
     NSLog(@"URLSTR:%@",urlStr);
     NSURL *url = [NSURL URLWithString:urlStr];
     NSURLRequest *request = [NSURLRequest requestWithURL:url];

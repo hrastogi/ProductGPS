@@ -40,6 +40,7 @@
 		6DD1CAD518F91DD0007D383A /* PGPSItemGridViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 6DD1CAD418F91DD0007D383A /* PGPSItemGridViewCell.m */; };
 		6DD1CAD718F91DF6007D383A /* PGPSItemGridViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6DD1CAD618F91DF6007D383A /* PGPSItemGridViewCell.xib */; };
 		6DD1CADA18F92029007D383A /* katrina-kaif.png in Resources */ = {isa = PBXBuildFile; fileRef = 6DD1CAD918F92029007D383A /* katrina-kaif.png */; };
+		6DD1CADD18F9BAB2007D383A /* Image.m in Sources */ = {isa = PBXBuildFile; fileRef = 6DD1CADC18F9BAB2007D383A /* Image.m */; };
 		6DEF2CD0188F9D8D00BC1A2E /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6DEF2CCF188F9D8D00BC1A2E /* Foundation.framework */; };
 		6DEF2CD2188F9D8D00BC1A2E /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6DEF2CD1188F9D8D00BC1A2E /* CoreGraphics.framework */; };
 		6DEF2CD4188F9D8D00BC1A2E /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6DEF2CD3188F9D8D00BC1A2E /* UIKit.framework */; };
@@ -131,6 +132,8 @@
 		6DD1CAD418F91DD0007D383A /* PGPSItemGridViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PGPSItemGridViewCell.m; sourceTree = "<group>"; };
 		6DD1CAD618F91DF6007D383A /* PGPSItemGridViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = PGPSItemGridViewCell.xib; sourceTree = "<group>"; };
 		6DD1CAD918F92029007D383A /* katrina-kaif.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "katrina-kaif.png"; sourceTree = "<group>"; };
+		6DD1CADB18F9BAB2007D383A /* Image.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Image.h; sourceTree = "<group>"; };
+		6DD1CADC18F9BAB2007D383A /* Image.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Image.m; sourceTree = "<group>"; };
 		6DEF2CCC188F9D8D00BC1A2E /* ProductGPS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ProductGPS.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		6DEF2CCF188F9D8D00BC1A2E /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		6DEF2CD1188F9D8D00BC1A2E /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -267,6 +270,8 @@
 				6D6745C518DEC079002EF799 /* Product.m */,
 				6D6745C718DEC1D6002EF799 /* Address.h */,
 				6D6745C818DEC1D6002EF799 /* Address.m */,
+				6DD1CADB18F9BAB2007D383A /* Image.h */,
+				6DD1CADC18F9BAB2007D383A /* Image.m */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -534,6 +539,7 @@
 				6D6745BA18DE5FF2002EF799 /* UIProgressView+AFNetworking.m in Sources */,
 				6D6745B718DE5FF2002EF799 /* UIAlertView+AFNetworking.m in Sources */,
 				6DEF2CDE188F9D8D00BC1A2E /* main.m in Sources */,
+				6DD1CADD18F9BAB2007D383A /* Image.m in Sources */,
 				6D6745CD18DEC35D002EF799 /* ProductAssembler.m in Sources */,
 				6D6745B318DE5FF2002EF799 /* AFURLResponseSerialization.m in Sources */,
 				6D6745C918DEC1D6002EF799 /* Address.m in Sources */,

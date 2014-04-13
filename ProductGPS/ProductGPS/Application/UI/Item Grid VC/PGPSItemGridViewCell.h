@@ -8,6 +8,9 @@
 
 #import <UIKit/UIKit.h>
 
+@class Product;
 @interface PGPSItemGridViewCell : UICollectionViewCell
-@property (nonatomic, strong) IBOutlet UILabel *titleLabel;
+@property (nonatomic) UIImageView *productImageView;
+
+-(void) updateCellWithProduct:(Product*) product;
 @end
