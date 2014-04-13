@@ -40,6 +40,9 @@
     product.name = [productResponse objectForKey:@"name"];
     product.brand = [productResponse objectForKey:@"brand"];
     product.price = [productResponse objectForKey:@"msrp"];
+    if(!product.price){
+        product.price = [searchResult objectForKey:@"price"];
+    }
     
     NSArray *images = [productResponse objectForKey:@"images"];
     for(NSDictionary *image in images){
