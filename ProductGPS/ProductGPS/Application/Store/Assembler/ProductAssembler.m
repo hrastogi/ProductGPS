@@ -45,13 +45,13 @@
     for(NSDictionary *image in images){
         NSDictionary *imageInfo = [image objectForKey:@"ImageInfo"];
         NSString *imageName = [imageInfo objectForKey:@"imageName"];
+        NSString *imageLink = [imageInfo objectForKey:@"link"];
+        
         if([imageName isEqualToString:@"LARGE"]){
-            product.largeImage.imageName = imageName;
-            product.largeImage.imageLink = [imageInfo objectForKey:@"link"];
+            product.largeImage = [[Image alloc] initWithImageName:imageName andImageLink: imageLink];
         }
         else if ([imageName isEqualToString:@"SMALL"]){
-            product.smallImage.imageName = imageName;
-            product.smallImage.imageLink = [imageInfo objectForKey:@"link"];
+           product.smallImage= [[Image alloc] initWithImageName:imageName andImageLink: imageLink];
         }
     }
     

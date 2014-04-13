@@ -10,7 +10,7 @@
 #import "PGPSItemGridViewCell.h"
 #import "Product.h"
 #import "Image.h"
-
+#import "UIImageView+AFNetworking.h"
 
 @interface PGPSItemGridViewController ()
 @property (nonatomic, strong) IBOutlet UICollectionView *collectionView;
@@ -51,11 +51,11 @@
 
 -(NSInteger)numberOfSectionsInCollectionView:(UICollectionView *)collectionView {
     
-    return self.products.count/2;
+    return 1;
 }
 
 -(NSInteger)collectionView:(UICollectionView *)collectionView numberOfItemsInSection:(NSInteger)section {
-    return 2;
+    return self.products.count;
 }
 
 -(UICollectionViewCell *)collectionView:(UICollectionView *)collectionView cellForItemAtIndexPath:(NSIndexPath *)indexPath {
@@ -63,29 +63,24 @@
     static NSString *cellIdentifier = @"itemCell";
     
     PGPSItemGridViewCell *cell = (PGPSItemGridViewCell *)[collectionView dequeueReusableCellWithReuseIdentifier:cellIdentifier forIndexPath:indexPath];
-   
-    int index = indexPath.section;
-    if(!(indexPath.row%2)){
-        index++;
-    }
-    NSLog(@"index:%d",index);
-    Product *product = [self.products objectAtIndex:index];
+ 
+    Product *product = [self.products objectAtIndex:indexPath.row];
     [cell updateCellWithProduct:product];
     
     NSURL *url = [NSURL URLWithString:product.smallImage.imageLink];
     NSURLRequest *request = [NSURLRequest requestWithURL:url];
-    UIImage *placeholderImage = [UIImage imageNamed:@"katrina-kaif.png"];
+    UIImage *placeholderImage = [UIImage imageNamed:@"placeholder.png"];
     
-    __weak PGPSItemGridViewCell *weakcell = cell;
+    __weak PGPSItemGridViewCell *weakCell = cell;
     
-//    [cell.imageView setImageWithURLRequest:request
-//                          placeholderImage:placeholderImage
-//                                   success:^(NSURLRequest *request, NSHTTPURLResponse *response, UIImage *image) {
-//                                       
-//                                       weakCell.imageView.image = image;
-//                                       [weakCell setNeedsLayout];
-//                                       
-//                                   } failure:nil];
+    [cell.productImageView setImageWithURLRequest:request
+                          placeholderImage:placeholderImage
+                                   success:^(NSURLRequest *request, NSHTTPURLResponse *response, UIImage *image) {
+                                       
+                                       weakCell.productImageView.image = image;
+                                       [weakCell setNeedsLayout];
+                                       
+                                   } failure:nil];
     return cell;
     
 }

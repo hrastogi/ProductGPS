@@ -9,5 +9,11 @@
 #import "Image.h"
 
 @implementation Image
-
+-(id)initWithImageName:(NSString*)imageName andImageLink:(NSString*) imageLink{
+    if(self = [super init]){
+        self.imageName = imageName;
+        self.imageLink = imageLink;
+    }
+    return self;
+}
 @end

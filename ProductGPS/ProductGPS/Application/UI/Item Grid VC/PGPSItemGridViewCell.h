@@ -10,7 +10,7 @@
 
 @class Product;
 @interface PGPSItemGridViewCell : UICollectionViewCell
-@property (nonatomic) UIImageView *productImageView;
+@property (nonatomic) IBOutlet UIImageView *productImageView;
 
 -(void) updateCellWithProduct:(Product*) product;
 @end

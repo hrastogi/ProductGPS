@@ -11,4 +11,5 @@
 @interface Image : NSObject
 @property (nonatomic) NSString *imageName;
 @property (nonatomic) NSString *imageLink;
+-(id)initWithImageName:(NSString*)imageName andImageLink:(NSString*) imageLink;
 @end
