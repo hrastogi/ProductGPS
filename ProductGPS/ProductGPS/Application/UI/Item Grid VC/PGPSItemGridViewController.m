@@ -6,11 +6,13 @@
 //  Copyright (c) 2014 Heena. All rights reserved.
 //
 
+#import "UIImageView+AFNetworking.h"
+
 #import "PGPSItemGridViewController.h"
 #import "PGPSItemGridViewCell.h"
+#import "PGPSItemDetailViewController.h"
 #import "Product.h"
 #import "Image.h"
-#import "UIImageView+AFNetworking.h"
 
 @interface PGPSItemGridViewController ()
 @property (nonatomic, strong) IBOutlet UICollectionView *collectionView;
@@ -49,6 +51,8 @@
     // Dispose of any resources that can be recreated.
 }
 
+#pragma mark - UICollection View DataSource
+
 -(NSInteger)numberOfSectionsInCollectionView:(UICollectionView *)collectionView {
     
     return 1;
@@ -83,5 +87,13 @@
                                    } failure:nil];
     return cell;
     
+}
+
+#pragma mark - UICollectionView Delegate
+- (void)collectionView:(UICollectionView *)collectionView didSelectItemAtIndexPath:(NSIndexPath *)indexPath{
+    NSLog(@" selected index path row:%d" ,indexPath.row);
+    PGPSItemDetailViewController *detailVC = [[PGPSItemDetailViewController alloc] init];
+    detailVC.selectedProduct = [self.products objectAtIndex:indexPath.row];
+    [self.navigationController pushViewController:detailVC animated:YES];
 }
 @end

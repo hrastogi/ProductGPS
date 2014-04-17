@@ -34,7 +34,6 @@
 		6D6745CD18DEC35D002EF799 /* ProductAssembler.m in Sources */ = {isa = PBXBuildFile; fileRef = 6D6745CC18DEC35D002EF799 /* ProductAssembler.m */; };
 		6D6745CF18E93BFA002EF799 /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6D6745CE18E93BF8002EF799 /* CoreLocation.framework */; };
 		6D6745D218E940A0002EF799 /* PGPSLocationManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 6D6745D118E940A0002EF799 /* PGPSLocationManager.m */; };
-		6DD1CA7318F51500007D383A /* NibCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6DD1CA7218F514FF007D383A /* NibCell.xib */; };
 		6DD1CACC18F91BBD007D383A /* PGPSItemGridViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6DD1CACA18F91BBD007D383A /* PGPSItemGridViewController.m */; };
 		6DD1CACD18F91BBD007D383A /* PGPSItemGridViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6DD1CACB18F91BBD007D383A /* PGPSItemGridViewController.xib */; };
 		6DD1CAD518F91DD0007D383A /* PGPSItemGridViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 6DD1CAD418F91DD0007D383A /* PGPSItemGridViewCell.m */; };
@@ -42,6 +41,8 @@
 		6DD1CADA18F92029007D383A /* katrina-kaif.png in Resources */ = {isa = PBXBuildFile; fileRef = 6DD1CAD918F92029007D383A /* katrina-kaif.png */; };
 		6DD1CADD18F9BAB2007D383A /* Image.m in Sources */ = {isa = PBXBuildFile; fileRef = 6DD1CADC18F9BAB2007D383A /* Image.m */; };
 		6DD1CADF18FB0CCE007D383A /* placeholder.png in Resources */ = {isa = PBXBuildFile; fileRef = 6DD1CADE18FB0CCE007D383A /* placeholder.png */; };
+		6DD1CAE418FF62EC007D383A /* PGPSItemDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6DD1CAE218FF62EC007D383A /* PGPSItemDetailViewController.m */; };
+		6DD1CAE518FF62EC007D383A /* PGPSItemDetailViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6DD1CAE318FF62EC007D383A /* PGPSItemDetailViewController.xib */; };
 		6DEF2CD0188F9D8D00BC1A2E /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6DEF2CCF188F9D8D00BC1A2E /* Foundation.framework */; };
 		6DEF2CD2188F9D8D00BC1A2E /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6DEF2CD1188F9D8D00BC1A2E /* CoreGraphics.framework */; };
 		6DEF2CD4188F9D8D00BC1A2E /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6DEF2CD3188F9D8D00BC1A2E /* UIKit.framework */; };
@@ -57,8 +58,6 @@
 		6DEF2CF9188F9D8D00BC1A2E /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 6DEF2CF7188F9D8D00BC1A2E /* InfoPlist.strings */; };
 		6DEF2CFB188F9D8D00BC1A2E /* ProductGPSTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 6DEF2CFA188F9D8D00BC1A2E /* ProductGPSTests.m */; };
 		6DEF2D09188F9E0000BC1A2E /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 6DEF2D07188F9E0000BC1A2E /* AppDelegate.m */; };
-		6DEF2D39188FAE9D00BC1A2E /* ItemDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6DEF2D2F188FAE9D00BC1A2E /* ItemDetailViewController.m */; };
-		6DEF2D3A188FAE9D00BC1A2E /* ItemDetailViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6DEF2D30188FAE9D00BC1A2E /* ItemDetailViewController.xib */; };
 		6DEF2D3D188FAE9D00BC1A2E /* MainMenuViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6DEF2D37188FAE9D00BC1A2E /* MainMenuViewController.m */; };
 		6DEF2D3E188FAE9D00BC1A2E /* MainMenuViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6DEF2D38188FAE9D00BC1A2E /* MainMenuViewController.xib */; };
 /* End PBXBuildFile section */
@@ -125,7 +124,6 @@
 		6D6745CE18E93BF8002EF799 /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
 		6D6745D018E940A0002EF799 /* PGPSLocationManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PGPSLocationManager.h; sourceTree = "<group>"; };
 		6D6745D118E940A0002EF799 /* PGPSLocationManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PGPSLocationManager.m; sourceTree = "<group>"; };
-		6DD1CA7218F514FF007D383A /* NibCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = NibCell.xib; path = ProductGPS/Application/UI/NibCell.xib; sourceTree = SOURCE_ROOT; };
 		6DD1CAC918F91BBD007D383A /* PGPSItemGridViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PGPSItemGridViewController.h; sourceTree = "<group>"; };
 		6DD1CACA18F91BBD007D383A /* PGPSItemGridViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PGPSItemGridViewController.m; sourceTree = "<group>"; };
 		6DD1CACB18F91BBD007D383A /* PGPSItemGridViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = PGPSItemGridViewController.xib; sourceTree = "<group>"; };
@@ -136,6 +134,9 @@
 		6DD1CADB18F9BAB2007D383A /* Image.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Image.h; sourceTree = "<group>"; };
 		6DD1CADC18F9BAB2007D383A /* Image.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Image.m; sourceTree = "<group>"; };
 		6DD1CADE18FB0CCE007D383A /* placeholder.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = placeholder.png; sourceTree = "<group>"; };
+		6DD1CAE118FF62EC007D383A /* PGPSItemDetailViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PGPSItemDetailViewController.h; sourceTree = "<group>"; };
+		6DD1CAE218FF62EC007D383A /* PGPSItemDetailViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PGPSItemDetailViewController.m; sourceTree = "<group>"; };
+		6DD1CAE318FF62EC007D383A /* PGPSItemDetailViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = PGPSItemDetailViewController.xib; sourceTree = "<group>"; };
 		6DEF2CCC188F9D8D00BC1A2E /* ProductGPS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ProductGPS.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		6DEF2CCF188F9D8D00BC1A2E /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		6DEF2CD1188F9D8D00BC1A2E /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -154,9 +155,6 @@
 		6DEF2CFA188F9D8D00BC1A2E /* ProductGPSTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ProductGPSTests.m; sourceTree = "<group>"; };
 		6DEF2D06188F9E0000BC1A2E /* AppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		6DEF2D07188F9E0000BC1A2E /* AppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		6DEF2D2E188FAE9D00BC1A2E /* ItemDetailViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ItemDetailViewController.h; sourceTree = "<group>"; };
-		6DEF2D2F188FAE9D00BC1A2E /* ItemDetailViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ItemDetailViewController.m; sourceTree = "<group>"; };
-		6DEF2D30188FAE9D00BC1A2E /* ItemDetailViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ItemDetailViewController.xib; sourceTree = "<group>"; };
 		6DEF2D36188FAE9D00BC1A2E /* MainMenuViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MainMenuViewController.h; sourceTree = "<group>"; };
 		6DEF2D37188FAE9D00BC1A2E /* MainMenuViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MainMenuViewController.m; sourceTree = "<group>"; };
 		6DEF2D38188FAE9D00BC1A2E /* MainMenuViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MainMenuViewController.xib; sourceTree = "<group>"; };
@@ -310,6 +308,16 @@
 			path = images;
 			sourceTree = "<group>";
 		};
+		6DD1CAE018FF62D7007D383A /* Item Detail VC */ = {
+			isa = PBXGroup;
+			children = (
+				6DD1CAE118FF62EC007D383A /* PGPSItemDetailViewController.h */,
+				6DD1CAE218FF62EC007D383A /* PGPSItemDetailViewController.m */,
+				6DD1CAE318FF62EC007D383A /* PGPSItemDetailViewController.xib */,
+			);
+			path = "Item Detail VC";
+			sourceTree = "<group>";
+		};
 		6DEF2CC3188F9D8D00BC1A2E = {
 			isa = PBXGroup;
 			children = (
@@ -401,22 +409,11 @@
 		6DEF2D08188F9E0000BC1A2E /* UI */ = {
 			isa = PBXGroup;
 			children = (
+				6DD1CAE018FF62D7007D383A /* Item Detail VC */,
 				6DD1CAC818F91BBD007D383A /* Item Grid VC */,
-				6DD1CA7218F514FF007D383A /* NibCell.xib */,
-				6DEF2D2D188FAE9D00BC1A2E /* Item Detail VC */,
 				6DEF2D35188FAE9D00BC1A2E /* Main Menu VC */,
 			);
 			path = UI;
-			sourceTree = "<group>";
-		};
-		6DEF2D2D188FAE9D00BC1A2E /* Item Detail VC */ = {
-			isa = PBXGroup;
-			children = (
-				6DEF2D2E188FAE9D00BC1A2E /* ItemDetailViewController.h */,
-				6DEF2D2F188FAE9D00BC1A2E /* ItemDetailViewController.m */,
-				6DEF2D30188FAE9D00BC1A2E /* ItemDetailViewController.xib */,
-			);
-			path = "Item Detail VC";
 			sourceTree = "<group>";
 		};
 		6DEF2D35188FAE9D00BC1A2E /* Main Menu VC */ = {
@@ -507,14 +504,13 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6DD1CAE518FF62EC007D383A /* PGPSItemDetailViewController.xib in Resources */,
 				6DEF2CDC188F9D8D00BC1A2E /* InfoPlist.strings in Resources */,
 				6DEF2CE7188F9D8D00BC1A2E /* Images.xcassets in Resources */,
 				6DD1CAD718F91DF6007D383A /* PGPSItemGridViewCell.xib in Resources */,
-				6DD1CA7318F51500007D383A /* NibCell.xib in Resources */,
 				6DD1CADF18FB0CCE007D383A /* placeholder.png in Resources */,
 				6DEF2D3E188FAE9D00BC1A2E /* MainMenuViewController.xib in Resources */,
 				6DD1CADA18F92029007D383A /* katrina-kaif.png in Resources */,
-				6DEF2D3A188FAE9D00BC1A2E /* ItemDetailViewController.xib in Resources */,
 				6DD1CACD18F91BBD007D383A /* PGPSItemGridViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -536,6 +532,7 @@
 			files = (
 				6D6745BB18DE5FF2002EF799 /* UIRefreshControl+AFNetworking.m in Sources */,
 				6DD1CACC18F91BBD007D383A /* PGPSItemGridViewController.m in Sources */,
+				6DD1CAE418FF62EC007D383A /* PGPSItemDetailViewController.m in Sources */,
 				6D6745C618DEC079002EF799 /* Product.m in Sources */,
 				6D6745B118DE5FF2002EF799 /* AFURLConnectionOperation.m in Sources */,
 				6DEF2CE5188F9D8D00BC1A2E /* ProductGPS.xcdatamodeld in Sources */,
@@ -548,7 +545,6 @@
 				6D6745B318DE5FF2002EF799 /* AFURLResponseSerialization.m in Sources */,
 				6D6745C918DEC1D6002EF799 /* Address.m in Sources */,
 				6D6745B818DE5FF2002EF799 /* UIButton+AFNetworking.m in Sources */,
-				6DEF2D39188FAE9D00BC1A2E /* ItemDetailViewController.m in Sources */,
 				6D6745B618DE5FF2002EF799 /* UIActivityIndicatorView+AFNetworking.m in Sources */,
 				6D6745B218DE5FF2002EF799 /* AFURLRequestSerialization.m in Sources */,
 				6D6745C018DE6075002EF799 /* PGPSProductStore.m in Sources */,

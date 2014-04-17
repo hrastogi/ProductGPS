@@ -8,6 +8,6 @@
 
 #import <UIKit/UIKit.h>
 
-@interface PGPSItemGridViewController : UIViewController<UICollectionViewDataSource,UICollisionBehaviorDelegate>
+@interface PGPSItemGridViewController : UIViewController<UICollectionViewDataSource,UICollectionViewDelegate>
 @property (nonatomic) NSArray *products;
 @end
