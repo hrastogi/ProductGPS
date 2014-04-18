@@ -8,12 +8,16 @@
 #import "UIImageView+AFNetworking.h"
 
 #import "PGPSItemDetailViewController.h"
+#import "PGPSPhoneCell.h"
 #import "Product.h"
 #import "Image.h"
 
 @interface PGPSItemDetailViewController ()
 @property (nonatomic) IBOutlet UIImageView *productImageView;
 @property (nonatomic) IBOutlet UITableView *productTableView;
+@property (nonatomic) IBOutlet UILabel *productName;
+@property (nonatomic) IBOutlet UILabel *productBrand;
+@property (nonatomic) IBOutlet UILabel *productPrice;
 @end
 
 @implementation PGPSItemDetailViewController
@@ -42,7 +46,14 @@
 
 #pragma  mark - UI Setup
 -(void) loadProduct{
-    NSURL *url = [NSURL URLWithString:self.selectedProduct.smallImage.imageLink];
+    self.productName.text = self.selectedProduct.name;
+    self.productBrand.text = self.selectedProduct.brand;
+    self.productPrice.text = [NSString stringWithFormat:@"$%@",self.selectedProduct.price];
+    [self loadImage];
+    [self.productTableView reloadData];
+}
+
+-(void) loadImage{ NSURL *url = [NSURL URLWithString:self.selectedProduct.smallImage.imageLink];
     NSURLRequest *request = [NSURLRequest requestWithURL:url];
     UIImage *placeholderImage = [UIImage imageNamed:@"placeholder.png"];
     
@@ -55,6 +66,54 @@
                                               [imageView setNeedsLayout];
                                               
                                           } failure:nil];
-
 }
+
+#pragma mark - UITable view Datasource
+
+- (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView{
+    return 1;
+}
+
+- (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section{
+    return 2;
+}
+
+//- (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath{
+//    
+//    static NSString *cellIdentifier = @"Detail Cell";
+//    UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:cellIdentifier];
+//    
+//    if (cell == nil){
+//        cell = [[UITableViewCell alloc] initWithStyle:UITableViewCellStyleSubtitle reuseIdentifier:cellIdentifier];
+//    }
+//    
+//    cell.textLabel.text = @"Address";
+//    return cell;
+//}
+
+- (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath{
+    
+    static NSString *itemListCellIdentifier = @"PhoneCell";
+    
+    PGPSPhoneCell *cell = (PGPSPhoneCell *)[tableView dequeueReusableCellWithIdentifier:itemListCellIdentifier];
+    if (cell == nil)
+    {
+        NSArray *nib = [[NSBundle mainBundle] loadNibNamed:@"PGPSPhoneCell" owner:self options:nil];
+        cell = [nib objectAtIndex:0];
+    }
+    
+    return cell;
+}
+
+
+#pragma mark - UITableView Delegate
+- (CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath{
+    return 80.0f;
+}
+
+- (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath{
+    
+}
+
+
 @end

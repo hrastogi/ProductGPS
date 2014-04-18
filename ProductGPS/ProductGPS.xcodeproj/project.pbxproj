@@ -43,6 +43,13 @@
 		6DD1CADF18FB0CCE007D383A /* placeholder.png in Resources */ = {isa = PBXBuildFile; fileRef = 6DD1CADE18FB0CCE007D383A /* placeholder.png */; };
 		6DD1CAE418FF62EC007D383A /* PGPSItemDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6DD1CAE218FF62EC007D383A /* PGPSItemDetailViewController.m */; };
 		6DD1CAE518FF62EC007D383A /* PGPSItemDetailViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6DD1CAE318FF62EC007D383A /* PGPSItemDetailViewController.xib */; };
+		6DD1CAF018FF992F007D383A /* ItemListCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 6DD1CAE918FF992F007D383A /* ItemListCell.m */; };
+		6DD1CAF118FF992F007D383A /* ItemListCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6DD1CAEA18FF992F007D383A /* ItemListCell.xib */; };
+		6DD1CAF218FF992F007D383A /* blackTshirt.png in Resources */ = {isa = PBXBuildFile; fileRef = 6DD1CAEC18FF992F007D383A /* blackTshirt.png */; };
+		6DD1CAF318FF992F007D383A /* ItemsListViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6DD1CAEE18FF992F007D383A /* ItemsListViewController.m */; };
+		6DD1CAF418FF992F007D383A /* ItemsListViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6DD1CAEF18FF992F007D383A /* ItemsListViewController.xib */; };
+		6DD1CAF818FF9D34007D383A /* PGPSPhoneCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 6DD1CAF718FF9D34007D383A /* PGPSPhoneCell.m */; };
+		6DD1CAFA18FF9D51007D383A /* PGPSPhoneCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6DD1CAF918FF9D51007D383A /* PGPSPhoneCell.xib */; };
 		6DEF2CD0188F9D8D00BC1A2E /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6DEF2CCF188F9D8D00BC1A2E /* Foundation.framework */; };
 		6DEF2CD2188F9D8D00BC1A2E /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6DEF2CD1188F9D8D00BC1A2E /* CoreGraphics.framework */; };
 		6DEF2CD4188F9D8D00BC1A2E /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6DEF2CD3188F9D8D00BC1A2E /* UIKit.framework */; };
@@ -137,6 +144,16 @@
 		6DD1CAE118FF62EC007D383A /* PGPSItemDetailViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PGPSItemDetailViewController.h; sourceTree = "<group>"; };
 		6DD1CAE218FF62EC007D383A /* PGPSItemDetailViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PGPSItemDetailViewController.m; sourceTree = "<group>"; };
 		6DD1CAE318FF62EC007D383A /* PGPSItemDetailViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = PGPSItemDetailViewController.xib; sourceTree = "<group>"; };
+		6DD1CAE818FF992F007D383A /* ItemListCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ItemListCell.h; sourceTree = "<group>"; };
+		6DD1CAE918FF992F007D383A /* ItemListCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ItemListCell.m; sourceTree = "<group>"; };
+		6DD1CAEA18FF992F007D383A /* ItemListCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ItemListCell.xib; sourceTree = "<group>"; };
+		6DD1CAEC18FF992F007D383A /* blackTshirt.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = blackTshirt.png; sourceTree = "<group>"; };
+		6DD1CAED18FF992F007D383A /* ItemsListViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ItemsListViewController.h; sourceTree = "<group>"; };
+		6DD1CAEE18FF992F007D383A /* ItemsListViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ItemsListViewController.m; sourceTree = "<group>"; };
+		6DD1CAEF18FF992F007D383A /* ItemsListViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ItemsListViewController.xib; sourceTree = "<group>"; };
+		6DD1CAF618FF9D34007D383A /* PGPSPhoneCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PGPSPhoneCell.h; sourceTree = "<group>"; };
+		6DD1CAF718FF9D34007D383A /* PGPSPhoneCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PGPSPhoneCell.m; sourceTree = "<group>"; };
+		6DD1CAF918FF9D51007D383A /* PGPSPhoneCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = PGPSPhoneCell.xib; sourceTree = "<group>"; };
 		6DEF2CCC188F9D8D00BC1A2E /* ProductGPS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ProductGPS.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		6DEF2CCF188F9D8D00BC1A2E /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		6DEF2CD1188F9D8D00BC1A2E /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -311,11 +328,52 @@
 		6DD1CAE018FF62D7007D383A /* Item Detail VC */ = {
 			isa = PBXGroup;
 			children = (
+				6DD1CAF518FF9A13007D383A /* Cells */,
 				6DD1CAE118FF62EC007D383A /* PGPSItemDetailViewController.h */,
 				6DD1CAE218FF62EC007D383A /* PGPSItemDetailViewController.m */,
 				6DD1CAE318FF62EC007D383A /* PGPSItemDetailViewController.xib */,
 			);
 			path = "Item Detail VC";
+			sourceTree = "<group>";
+		};
+		6DD1CAE618FF992E007D383A /* Item List VC */ = {
+			isa = PBXGroup;
+			children = (
+				6DD1CAE718FF992F007D383A /* Cells */,
+				6DD1CAEB18FF992F007D383A /* Images */,
+				6DD1CAED18FF992F007D383A /* ItemsListViewController.h */,
+				6DD1CAEE18FF992F007D383A /* ItemsListViewController.m */,
+				6DD1CAEF18FF992F007D383A /* ItemsListViewController.xib */,
+			);
+			path = "Item List VC";
+			sourceTree = "<group>";
+		};
+		6DD1CAE718FF992F007D383A /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+				6DD1CAE818FF992F007D383A /* ItemListCell.h */,
+				6DD1CAE918FF992F007D383A /* ItemListCell.m */,
+				6DD1CAEA18FF992F007D383A /* ItemListCell.xib */,
+			);
+			path = Cells;
+			sourceTree = "<group>";
+		};
+		6DD1CAEB18FF992F007D383A /* Images */ = {
+			isa = PBXGroup;
+			children = (
+				6DD1CAEC18FF992F007D383A /* blackTshirt.png */,
+			);
+			path = Images;
+			sourceTree = "<group>";
+		};
+		6DD1CAF518FF9A13007D383A /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+				6DD1CAF618FF9D34007D383A /* PGPSPhoneCell.h */,
+				6DD1CAF718FF9D34007D383A /* PGPSPhoneCell.m */,
+				6DD1CAF918FF9D51007D383A /* PGPSPhoneCell.xib */,
+			);
+			path = Cells;
 			sourceTree = "<group>";
 		};
 		6DEF2CC3188F9D8D00BC1A2E = {
@@ -409,6 +467,7 @@
 		6DEF2D08188F9E0000BC1A2E /* UI */ = {
 			isa = PBXGroup;
 			children = (
+				6DD1CAE618FF992E007D383A /* Item List VC */,
 				6DD1CAE018FF62D7007D383A /* Item Detail VC */,
 				6DD1CAC818F91BBD007D383A /* Item Grid VC */,
 				6DEF2D35188FAE9D00BC1A2E /* Main Menu VC */,
@@ -510,8 +569,12 @@
 				6DD1CAD718F91DF6007D383A /* PGPSItemGridViewCell.xib in Resources */,
 				6DD1CADF18FB0CCE007D383A /* placeholder.png in Resources */,
 				6DEF2D3E188FAE9D00BC1A2E /* MainMenuViewController.xib in Resources */,
+				6DD1CAFA18FF9D51007D383A /* PGPSPhoneCell.xib in Resources */,
+				6DD1CAF418FF992F007D383A /* ItemsListViewController.xib in Resources */,
 				6DD1CADA18F92029007D383A /* katrina-kaif.png in Resources */,
+				6DD1CAF218FF992F007D383A /* blackTshirt.png in Resources */,
 				6DD1CACD18F91BBD007D383A /* PGPSItemGridViewController.xib in Resources */,
+				6DD1CAF118FF992F007D383A /* ItemListCell.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -531,6 +594,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				6D6745BB18DE5FF2002EF799 /* UIRefreshControl+AFNetworking.m in Sources */,
+				6DD1CAF018FF992F007D383A /* ItemListCell.m in Sources */,
 				6DD1CACC18F91BBD007D383A /* PGPSItemGridViewController.m in Sources */,
 				6DD1CAE418FF62EC007D383A /* PGPSItemDetailViewController.m in Sources */,
 				6D6745C618DEC079002EF799 /* Product.m in Sources */,
@@ -546,6 +610,8 @@
 				6D6745C918DEC1D6002EF799 /* Address.m in Sources */,
 				6D6745B818DE5FF2002EF799 /* UIButton+AFNetworking.m in Sources */,
 				6D6745B618DE5FF2002EF799 /* UIActivityIndicatorView+AFNetworking.m in Sources */,
+				6DD1CAF318FF992F007D383A /* ItemsListViewController.m in Sources */,
+				6DD1CAF818FF9D34007D383A /* PGPSPhoneCell.m in Sources */,
 				6D6745B218DE5FF2002EF799 /* AFURLRequestSerialization.m in Sources */,
 				6D6745C018DE6075002EF799 /* PGPSProductStore.m in Sources */,
 				6D6745B518DE5FF2002EF799 /* AFNetworkActivityIndicatorManager.m in Sources */,

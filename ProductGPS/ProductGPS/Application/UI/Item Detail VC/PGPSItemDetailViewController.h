@@ -8,7 +8,8 @@
 
 #import <UIKit/UIKit.h>
 
-@class Product;
-@interface PGPSItemDetailViewController : UIViewController
+@class Product,PGPSPhoneCell;
+@interface PGPSItemDetailViewController : UIViewController<UITableViewDataSource,UITableViewDelegate>
 @property (nonatomic) Product *selectedProduct;
+@property (nonatomic,weak) IBOutlet PGPSPhoneCell *phoneCell;
 @end
