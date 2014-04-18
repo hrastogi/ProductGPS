@@ -13,6 +13,7 @@
 @property (nonatomic) IBOutlet UILabel *nameLabel;
 @property (nonatomic) IBOutlet UILabel *brandLabel;
 @property (nonatomic) IBOutlet UILabel *priceLabel;
+@property (nonatomic) IBOutlet UILabel *distanceLabel;
 
 @end
 @implementation PGPSItemGridViewCell
@@ -45,7 +46,7 @@
     self.nameLabel.text = product.name;
     self.brandLabel.text = product.brand;
     self.priceLabel.text = [NSString stringWithFormat:@"$%@",product.price];
-    
+    self.distanceLabel.text = [NSString stringWithFormat:@"%@ %@",product.distance,product.distanceUnit];
 }
 /*
 // Only override drawRect: if you perform custom drawing.

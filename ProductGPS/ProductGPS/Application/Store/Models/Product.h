@@ -15,6 +15,7 @@
 @property (nonatomic) NSNumber *price;
 @property (nonatomic) NSString *brand;
 @property (nonatomic) NSNumber *distance;
+@property (nonatomic) NSString *distanceUnit;
 @property (nonatomic) NSString *phoneNumber;
 @property (nonatomic) Address *address;
 @property (nonatomic) NSString *retailerName;

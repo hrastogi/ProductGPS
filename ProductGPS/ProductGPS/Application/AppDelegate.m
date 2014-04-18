@@ -26,6 +26,9 @@
     self.window.rootViewController = nav;
     [[UINavigationBar appearance] setBarTintColor:[UIColor colorWithRed:130.0f/255.0f green:182.0f/255.0f blue:71.0f/255.0f alpha:1.0f]];
     [[PGPSLocationManager sharedInstance] startLocationManager];
+    
+    self.window.tintColor = [UIColor whiteColor];
+    [[UIApplication sharedApplication] setStatusBarStyle:UIStatusBarStyleLightContent];
 
     [self.window makeKeyAndVisible];
     return YES;
