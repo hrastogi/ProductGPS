@@ -9,6 +9,7 @@
 #import "ProductAssembler.h"
 #import "Product.h"
 #import "Image.h"
+#import  "Address.h"
 
 @implementation ProductAssembler
 +(ProductAssembler*)sharedInstance
@@ -58,6 +59,11 @@
         }
     }
     
+    NSDictionary *location1 = [searchResult objectForKey:@"location"];
+    NSDictionary *address = [location1 objectForKey:@"address"];
+    NSDictionary *location = [location1 objectForKey:@"location"];
+    
+    product.address = [[Address alloc] initWithLocation:location andAddress:address];
     return product;
 }
 
