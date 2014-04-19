@@ -50,6 +50,9 @@
 		6DD1CAF418FF992F007D383A /* ItemsListViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6DD1CAEF18FF992F007D383A /* ItemsListViewController.xib */; };
 		6DD1CAF818FF9D34007D383A /* PGPSPhoneCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 6DD1CAF718FF9D34007D383A /* PGPSPhoneCell.m */; };
 		6DD1CAFA18FF9D51007D383A /* PGPSPhoneCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6DD1CAF918FF9D51007D383A /* PGPSPhoneCell.xib */; };
+		6DD1CAFD190102C6007D383A /* PGPSAddressCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 6DD1CAFC190102C6007D383A /* PGPSAddressCell.m */; };
+		6DD1CAFF190102E3007D383A /* PGPSAddressCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6DD1CAFE190102E3007D383A /* PGPSAddressCell.xib */; };
+		6DD1CB011902EB6B007D383A /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6DD1CB001902EB6B007D383A /* MapKit.framework */; };
 		6DEF2CD0188F9D8D00BC1A2E /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6DEF2CCF188F9D8D00BC1A2E /* Foundation.framework */; };
 		6DEF2CD2188F9D8D00BC1A2E /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6DEF2CD1188F9D8D00BC1A2E /* CoreGraphics.framework */; };
 		6DEF2CD4188F9D8D00BC1A2E /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6DEF2CD3188F9D8D00BC1A2E /* UIKit.framework */; };
@@ -154,6 +157,10 @@
 		6DD1CAF618FF9D34007D383A /* PGPSPhoneCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PGPSPhoneCell.h; sourceTree = "<group>"; };
 		6DD1CAF718FF9D34007D383A /* PGPSPhoneCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PGPSPhoneCell.m; sourceTree = "<group>"; };
 		6DD1CAF918FF9D51007D383A /* PGPSPhoneCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = PGPSPhoneCell.xib; sourceTree = "<group>"; };
+		6DD1CAFB190102C6007D383A /* PGPSAddressCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PGPSAddressCell.h; sourceTree = "<group>"; };
+		6DD1CAFC190102C6007D383A /* PGPSAddressCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PGPSAddressCell.m; sourceTree = "<group>"; };
+		6DD1CAFE190102E3007D383A /* PGPSAddressCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = PGPSAddressCell.xib; sourceTree = "<group>"; };
+		6DD1CB001902EB6B007D383A /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
 		6DEF2CCC188F9D8D00BC1A2E /* ProductGPS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ProductGPS.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		6DEF2CCF188F9D8D00BC1A2E /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		6DEF2CD1188F9D8D00BC1A2E /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -182,6 +189,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6DD1CB011902EB6B007D383A /* MapKit.framework in Frameworks */,
 				6D6745CF18E93BFA002EF799 /* CoreLocation.framework in Frameworks */,
 				6D6745C218DE6379002EF799 /* AdSupport.framework in Frameworks */,
 				6D67458418DE5F60002EF799 /* CFNetwork.framework in Frameworks */,
@@ -372,6 +380,9 @@
 				6DD1CAF618FF9D34007D383A /* PGPSPhoneCell.h */,
 				6DD1CAF718FF9D34007D383A /* PGPSPhoneCell.m */,
 				6DD1CAF918FF9D51007D383A /* PGPSPhoneCell.xib */,
+				6DD1CAFB190102C6007D383A /* PGPSAddressCell.h */,
+				6DD1CAFC190102C6007D383A /* PGPSAddressCell.m */,
+				6DD1CAFE190102E3007D383A /* PGPSAddressCell.xib */,
 			);
 			path = Cells;
 			sourceTree = "<group>";
@@ -398,6 +409,7 @@
 		6DEF2CCE188F9D8D00BC1A2E /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				6DD1CB001902EB6B007D383A /* MapKit.framework */,
 				6D6745CE18E93BF8002EF799 /* CoreLocation.framework */,
 				6D6745C118DE6379002EF799 /* AdSupport.framework */,
 				6D67458318DE5F60002EF799 /* CFNetwork.framework */,
@@ -563,6 +575,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6DD1CAFF190102E3007D383A /* PGPSAddressCell.xib in Resources */,
 				6DD1CAE518FF62EC007D383A /* PGPSItemDetailViewController.xib in Resources */,
 				6DEF2CDC188F9D8D00BC1A2E /* InfoPlist.strings in Resources */,
 				6DEF2CE7188F9D8D00BC1A2E /* Images.xcassets in Resources */,
@@ -593,6 +606,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6DD1CAFD190102C6007D383A /* PGPSAddressCell.m in Sources */,
 				6D6745BB18DE5FF2002EF799 /* UIRefreshControl+AFNetworking.m in Sources */,
 				6DD1CAF018FF992F007D383A /* ItemListCell.m in Sources */,
 				6DD1CACC18F91BBD007D383A /* PGPSItemGridViewController.m in Sources */,

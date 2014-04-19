@@ -9,6 +9,7 @@
 
 #import "PGPSItemDetailViewController.h"
 #import "PGPSPhoneCell.h"
+#import "PGPSAddressCell.h"
 #import "Product.h"
 #import "Image.h"
 
@@ -69,7 +70,9 @@
 }
 
 #pragma mark - UITable view Datasource
-
+-(CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath{
+    return (indexPath.row == 0) ? 150.0f : 60.0f;
+}
 - (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView{
     return 1;
 }
@@ -78,22 +81,28 @@
     return 2;
 }
 
-//- (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath{
-//    
-//    static NSString *cellIdentifier = @"Detail Cell";
-//    UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:cellIdentifier];
-//    
-//    if (cell == nil){
-//        cell = [[UITableViewCell alloc] initWithStyle:UITableViewCellStyleSubtitle reuseIdentifier:cellIdentifier];
-//    }
-//    
-//    cell.textLabel.text = @"Address";
-//    return cell;
-//}
-
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath{
     
+    return (indexPath.row == 0) ? [self addressCellForTable:tableView] : [self phoneCellForTable:tableView];
+}
+
+-(PGPSAddressCell*) addressCellForTable:(UITableView*)tableView{
+    static NSString *itemListCellIdentifier = @"PGPSAddressCell";
+    
+    
+    PGPSAddressCell *cell = (PGPSAddressCell *)[tableView dequeueReusableCellWithIdentifier:itemListCellIdentifier];
+    if (cell == nil)
+    {
+        NSArray *nib = [[NSBundle mainBundle] loadNibNamed:@"PGPSAddressCell" owner:self options:nil];
+        cell = [nib objectAtIndex:0];
+    }
+    [cell updateCellWithProduct:self.selectedProduct];
+    return cell;
+}
+
+-(PGPSPhoneCell*) phoneCellForTable:(UITableView*) tableView{
     static NSString *itemListCellIdentifier = @"PhoneCell";
+    
     
     PGPSPhoneCell *cell = (PGPSPhoneCell *)[tableView dequeueReusableCellWithIdentifier:itemListCellIdentifier];
     if (cell == nil)
@@ -105,11 +114,7 @@
     return cell;
 }
 
-
 #pragma mark - UITableView Delegate
-- (CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath{
-    return 80.0f;
-}
 
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath{
     
