@@ -7,7 +7,7 @@
 //
 
 #import <UIKit/UIKit.h>
-
+@class Product;
 @interface PGPSPhoneCell : UITableViewCell
-@property (nonatomic) UILabel *phoneLabel;
+-(void)updateCellWithProduct:(Product*)product;
 @end

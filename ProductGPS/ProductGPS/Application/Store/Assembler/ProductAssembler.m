@@ -63,10 +63,12 @@
     NSDictionary *address = [location1 objectForKey:@"address"];
     NSDictionary *location = [location1 objectForKey:@"location"];
     NSDictionary *distance = [location1 objectForKey:@"distance"];
+    NSString *phoneNumber = [location1 objectForKey:@"phone"];
     
     product.distance = [NSNumber numberWithInt:[[distance objectForKey:@"distance"] intValue]];
     product.distanceUnit = [distance objectForKey:@"units"];
-    product.address = [[Address alloc] initWithLocation:location andAddress:address];
+    product.address = [[Address alloc] initWithLocation:location andAddress:address andPhoneNumber:phoneNumber];
+   
     return product;
 }
 

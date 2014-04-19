@@ -24,7 +24,7 @@
     MainMenuViewController *mainMenuVC = [[MainMenuViewController alloc]     initWithNibName:@"MainMenuViewController" bundle:nil];
     UINavigationController *nav = [[UINavigationController alloc]  initWithRootViewController:mainMenuVC];
     self.window.rootViewController = nav;
-    [[UINavigationBar appearance] setBarTintColor:[UIColor colorWithRed:130.0f/255.0f green:182.0f/255.0f blue:71.0f/255.0f alpha:1.0f]];
+    [[UINavigationBar appearance] setBarTintColor:[UIColor colorWithRed:78.0f/255.0f green:157.0f/255.0f blue:55.0f/255.0f alpha:1.0f]];
     [[PGPSLocationManager sharedInstance] startLocationManager];
     
     self.window.tintColor = [UIColor whiteColor];

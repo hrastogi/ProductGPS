@@ -110,7 +110,7 @@
         NSArray *nib = [[NSBundle mainBundle] loadNibNamed:@"PGPSPhoneCell" owner:self options:nil];
         cell = [nib objectAtIndex:0];
     }
-    
+    [cell updateCellWithProduct:self.selectedProduct];
     return cell;
 }
 

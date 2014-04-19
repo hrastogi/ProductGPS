@@ -16,6 +16,7 @@
 @property (nonatomic) NSString *streetAddress;
 @property (nonatomic) NSString *city;
 @property (nonatomic) NSString *country;
+@property (nonatomic) NSString *phoneNumber;
 
--(id)initWithLocation:(NSDictionary*) location andAddress:(NSDictionary*)address;
+-(id) initWithLocation:(NSDictionary*) location andAddress:(NSDictionary*)address andPhoneNumber:(NSString*)phoneNumber;
 @end

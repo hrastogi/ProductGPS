@@ -25,6 +25,9 @@
                     </label>
                 </subviews>
             </tableViewCellContentView>
+            <connections>
+                <outlet property="phoneLabel" destination="nZz-rm-msO" id="ZyI-sv-pCa"/>
+            </connections>
         </tableViewCell>
     </objects>
 </document>

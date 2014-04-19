@@ -7,6 +7,12 @@
 //
 
 #import "PGPSPhoneCell.h"
+#import "Product.h"
+#import "Address.h"
+
+@interface PGPSPhoneCell()
+@property (nonatomic) IBOutlet UILabel *phoneLabel;
+@end
 
 @implementation PGPSPhoneCell
 
@@ -26,4 +32,7 @@
     // Configure the view for the selected state
 }
 
+-(void)updateCellWithProduct:(Product*)product{
+    self.phoneLabel.text = product.address.phoneNumber;
+}
 @end

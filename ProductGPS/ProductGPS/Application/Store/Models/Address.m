@@ -9,7 +9,7 @@
 #import "Address.h"
 
 @implementation Address
--(id) initWithLocation:(NSDictionary*) location andAddress:(NSDictionary*)address{
+-(id) initWithLocation:(NSDictionary*) location andAddress:(NSDictionary*)address andPhoneNumber:(NSString*)phoneNumber{
     if(self = [super init]){
         self.latitude = [location objectForKey:@"latitude"];
         self.longitude = [location objectForKey:@"longitude"];
@@ -18,6 +18,7 @@
         self.streetAddress = [address objectForKey:@"address1"];
         self.city = [address objectForKey:@"city"];
         self.country = [address objectForKey:@"country"];
+        self.phoneNumber = phoneNumber;
     }
     return self;
 }
