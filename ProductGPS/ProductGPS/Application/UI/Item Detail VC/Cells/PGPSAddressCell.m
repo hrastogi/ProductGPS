@@ -36,6 +36,17 @@
 
 -(void) updateCellWithProduct:(Product*) product{
     self.addressLabel.text = product.address.streetAddress;
+    
+    CLLocationCoordinate2D coord = CLLocationCoordinate2DMake([product.address.latitude floatValue], [product.address.longitude floatValue]);
+    
+    MKCoordinateSpan span = MKCoordinateSpanMake(0.1, 0.1);
+    MKCoordinateRegion region = {coord, span};
+    
+    MKPointAnnotation *annotation = [[MKPointAnnotation alloc] init];
+    [annotation setCoordinate:coord];
+    
+    [self.mapView setRegion:region];
+    [self.mapView addAnnotation:annotation];
 }
 
 @end
