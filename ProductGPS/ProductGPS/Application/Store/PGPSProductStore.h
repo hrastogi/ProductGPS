@@ -14,6 +14,6 @@ typedef void (^PSCompletionBlock)(NSError *error);
 @property (nonatomic)NSArray *products;
 
 +(PGPSProductStore*) sharedInstance;
--(void) requestDataWithCallback:(PSCompletionBlock)callback;
+-(void) getProductOfType:(NSString*)productType withCallback:(PSCompletionBlock)callback;
 
 @end

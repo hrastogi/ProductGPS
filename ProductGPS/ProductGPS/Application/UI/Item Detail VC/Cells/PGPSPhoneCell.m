@@ -33,6 +33,13 @@
 }
 
 -(void)updateCellWithProduct:(Product*)product{
-    self.phoneLabel.text = product.address.phoneNumber;
+    NSString *phoneStr = product.address.phoneNumber;
+    phoneStr = [phoneStr stringByReplacingOccurrencesOfString:@"(\\d{3})(\\d{3})(\\d{4})"
+                                                               withString:@"$1-$2-$3"
+                                                                  options:NSRegularExpressionSearch
+                                                                    range:NSMakeRange(0, [phoneStr length])];
+    NSLog(@"%@", phoneStr);
+    self.phoneLabel.text = phoneStr;
 }
+
 @end

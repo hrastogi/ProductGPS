@@ -30,24 +30,23 @@
 
 #pragma mark - Fetch Methods
 
--(void) getProductWithName:(NSString*)name andKeyword:(NSString*)keyword{
-}
-
--(void) requestDataWithCallback:(PSCompletionBlock)callback{
+-(void) getProductOfType:(NSString*)productType withCallback:(PSCompletionBlock)callback{
     id adIdObject = [ASIdentifierManager sharedManager].advertisingIdentifier;
     NSLog(@"Adv Id: %@",adIdObject);
     
-    NSString *urlStr = @"http://api.retailigence.com/v2.0/products?apikey=TAVSjur9pYu8jeKGuFojLVXsqo4SNDM1&requestorid=%3C__NSConcreteUUID%200x9b94370%3E%20AAD91CEA-E126-4513-B022-FAC48647E461&userlocation=94301&productType=clothing&keywords=skirt";
+    NSString *urlStr = @"http://api.retailigence.com/v2.0/products?apikey=TAVSjur9pYu8jeKGuFojLVXsqo4SNDM1&requestorid=%3C__NSConcreteUUID%200x9b94370%3E%20AAD91CEA-E126-4513-B022-FAC48647E461&userlocation=94301&productType=clothing&keywords=";
+    
+    urlStr = [NSString stringWithFormat:@"%@%@",urlStr,productType];
     NSLog(@"URLSTR:%@",urlStr);
     NSURL *url = [NSURL URLWithString:urlStr];
     NSURLRequest *request = [NSURLRequest requestWithURL:url];
     
-   
+    
     AFHTTPRequestOperation *operation = [[AFHTTPRequestOperation alloc] initWithRequest:request];
     operation.responseSerializer = [AFJSONResponseSerializer serializer];
     
     [operation setCompletionBlockWithSuccess:^(AFHTTPRequestOperation *operation, id responseObject) {
-       
+        
         [self didLoadProduct:responseObject witheCallback:callback];
         
     } failure:^(AFHTTPRequestOperation *operation, NSError *error) {

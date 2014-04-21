@@ -91,7 +91,7 @@
 
 #pragma mark - UICollectionView Delegate
 - (void)collectionView:(UICollectionView *)collectionView didSelectItemAtIndexPath:(NSIndexPath *)indexPath{
-    NSLog(@" selected index path row:%d" ,indexPath.row);
+   
     PGPSItemDetailViewController *detailVC = [[PGPSItemDetailViewController alloc] init];
     detailVC.selectedProduct = [self.products objectAtIndex:indexPath.row];
     [self.navigationController pushViewController:detailVC animated:YES];

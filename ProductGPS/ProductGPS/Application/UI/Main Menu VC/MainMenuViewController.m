@@ -29,7 +29,7 @@
 {
     [super viewDidLoad];
     // Do any additional setup after loading the view from its nib.
-    self.menuItemsArray = [NSArray arrayWithObjects:@"Accessories",@"Coat", @"Dress",@"Lingerie",@"Shirt",@"Shoes",@"Skirt",nil];
+    self.menuItemsArray = [NSArray arrayWithObjects:@"Coat", @"Dress",@"Lingerie",@"Shirt",@"Shoes",@"Skirt",nil];
     
 }
 
@@ -45,7 +45,7 @@
 }
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section{
-    return 7;
+    return self.menuItemsArray.count;
 }
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath{
@@ -81,7 +81,7 @@
         }
     };
     
-    [[PGPSProductStore sharedInstance] requestDataWithCallback:callback];
+    [[PGPSProductStore sharedInstance] getProductOfType:[self.menuItemsArray objectAtIndex:indexPath.row] withCallback:callback];
 }
 
 @end
