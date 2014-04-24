@@ -54,6 +54,7 @@
              NSLog(@"zipcode:%@",placemark.postalCode);
              NSLog(@"Longitude:%f",self.currentLocation.coordinate.longitude);
              NSLog(@"Latitude:%f",self.currentLocation.coordinate.longitude);
+             self.postalCode = placemark.postalCode;
              
          }
          else

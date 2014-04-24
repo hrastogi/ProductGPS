@@ -13,6 +13,7 @@
 }
 @property (nonatomic, retain) CLLocationManager *locationManager;
 @property (nonatomic) CLLocation *currentLocation;
+@property (nonatomic) NSString *postalCode;
 
 +(PGPSLocationManager*) sharedInstance;
 -(void) startLocationManager;

@@ -10,6 +10,7 @@
 #import "PGPSProductStore.h"
 #import "Product.h"
 #import "ProductAssembler.h"
+#import "PGPSLocationManager.h"
 
 #define API_TEST_KEY @"TAVSjur9pYu8jeKGuFojLVXsqo4SNDM1"
 
@@ -34,9 +35,10 @@
     id adIdObject = [ASIdentifierManager sharedManager].advertisingIdentifier;
     NSLog(@"Adv Id: %@",adIdObject);
     
-    NSString *urlStr = @"http://api.retailigence.com/v2.0/products?apikey=TAVSjur9pYu8jeKGuFojLVXsqo4SNDM1&requestorid=%3C__NSConcreteUUID%200x9b94370%3E%20AAD91CEA-E126-4513-B022-FAC48647E461&userlocation=94301&productType=clothing&keywords=";
+    NSString *urlStr = @"http://api.retailigence.com/v2.0/products?apikey=TAVSjur9pYu8jeKGuFojLVXsqo4SNDM1&requestorid=%3C__NSConcreteUUID%200x9b94370%3E%20AAD91CEA-E126-4513-B022-FAC48647E461";
     
-    urlStr = [NSString stringWithFormat:@"%@%@",urlStr,productType];
+    NSString *postalCode = ([PGPSLocationManager sharedInstance].postalCode) ? [PGPSLocationManager sharedInstance].postalCode : @"90291";
+    urlStr = [NSString stringWithFormat:@"%@&userlocation=%@&productType=clothing&keywords=%@",urlStr,postalCode,productType];
     NSLog(@"URLSTR:%@",urlStr);
     NSURL *url = [NSURL URLWithString:urlStr];
     NSURLRequest *request = [NSURLRequest requestWithURL:url];

@@ -29,7 +29,7 @@
 {
     [super viewDidLoad];
     // Do any additional setup after loading the view from its nib.
-    self.menuItemsArray = [NSArray arrayWithObjects:@"Coat", @"Dress",@"Lingerie",@"Shirt",@"Shoes",@"Skirt",nil];
+    self.menuItemsArray = [NSArray arrayWithObjects:@"Coat", @"Dress",@"Lingerie",@"Shirt",@"Short",@"Skirt",nil];
     
 }
 

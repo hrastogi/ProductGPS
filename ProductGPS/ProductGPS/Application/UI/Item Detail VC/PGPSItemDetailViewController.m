@@ -97,6 +97,7 @@
         cell = [nib objectAtIndex:0];
     }
     [cell updateCellWithProduct:self.selectedProduct];
+    cell.selectionStyle = UITableViewCellSelectionStyleNone;
     return cell;
 }
 
@@ -111,6 +112,7 @@
         cell = [nib objectAtIndex:0];
     }
     [cell updateCellWithProduct:self.selectedProduct];
+    cell.selectionStyle = UITableViewCellSelectionStyleNone;
     return cell;
 }
 

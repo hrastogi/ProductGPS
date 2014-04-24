@@ -14,6 +14,7 @@
 @interface PGPSAddressCell()
 @property (nonatomic) IBOutlet UILabel *addressLabel;
 @property (nonatomic) IBOutlet MKMapView *mapView;
+@property (nonatomic) IBOutlet UILabel *cityAndStateLabel;
 @end
 
 @implementation PGPSAddressCell
@@ -36,6 +37,7 @@
 
 -(void) updateCellWithProduct:(Product*) product{
     self.addressLabel.text = product.address.streetAddress;
+    self.cityAndStateLabel.text = [NSString stringWithFormat:@"%@,%@",product.address.city,product.address.state];
     
     CLLocationCoordinate2D coord = CLLocationCoordinate2DMake([product.address.latitude floatValue], [product.address.longitude floatValue]);
     
