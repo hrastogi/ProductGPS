@@ -10,4 +10,5 @@
 
 @interface PGPSItemGridViewController : UIViewController<UICollectionViewDataSource,UICollectionViewDelegate>
 @property (nonatomic) NSArray *products;
+@property (nonatomic) NSString *productType;
 @end

@@ -21,15 +21,27 @@
    
     self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
     // Override point for customization after application launch.
+    [[PGPSLocationManager sharedInstance] startLocationManager];
+
     MainMenuViewController *mainMenuVC = [[MainMenuViewController alloc]     initWithNibName:@"MainMenuViewController" bundle:nil];
     UINavigationController *nav = [[UINavigationController alloc]  initWithRootViewController:mainMenuVC];
     self.window.rootViewController = nav;
     [[UINavigationBar appearance] setBarTintColor:[UIColor colorWithRed:78.0f/255.0f green:157.0f/255.0f blue:55.0f/255.0f alpha:1.0f]];
-    [[PGPSLocationManager sharedInstance] startLocationManager];
     
     self.window.tintColor = [UIColor whiteColor];
     [[UIApplication sharedApplication] setStatusBarStyle:UIStatusBarStyleLightContent];
-
+    [[UINavigationBar appearance] setTitleTextAttributes:
+     [NSDictionary dictionaryWithObjectsAndKeys:
+      [UIColor whiteColor],
+      NSForegroundColorAttributeName,
+      [UIColor whiteColor],
+      NSForegroundColorAttributeName,
+      [NSValue valueWithUIOffset:UIOffsetMake(0, -1)],
+      NSForegroundColorAttributeName,
+      [UIFont fontWithName:@"Arial-Bold" size:0.0],
+      NSFontAttributeName,
+      nil]];
+  
     [self.window makeKeyAndVisible];
     return YES;
 }

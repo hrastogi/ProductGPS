@@ -28,6 +28,8 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
+    self.title = @"ProductGPS";
+    
     // Do any additional setup after loading the view from its nib.
     self.menuItemsArray = [NSArray arrayWithObjects:@"Coat", @"Dress",@"Lingerie",@"Shirt",@"Short",@"Skirt",nil];
     
@@ -77,6 +79,9 @@
             // We have recieved data, push the item list view on stack.
             PGPSItemGridViewController *itemmsGridVC = [[PGPSItemGridViewController alloc] initWithNibName:@"PGPSItemGridViewController" bundle:nil];
             itemmsGridVC.products = [PGPSProductStore sharedInstance].products;
+            itemmsGridVC.productType = [self.menuItemsArray objectAtIndex:indexPath.row];
+            // Set this in every view controller so that the back button displays back instead of the root view controller name
+            self.navigationItem.backBarButtonItem = [[UIBarButtonItem alloc] initWithTitle:@"" style:UIBarButtonItemStylePlain target:nil action:nil];
             [self.navigationController pushViewController:itemmsGridVC animated:NO];
         }
     };

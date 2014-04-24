@@ -53,6 +53,8 @@
 		6DD1CAFD190102C6007D383A /* PGPSAddressCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 6DD1CAFC190102C6007D383A /* PGPSAddressCell.m */; };
 		6DD1CAFF190102E3007D383A /* PGPSAddressCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6DD1CAFE190102E3007D383A /* PGPSAddressCell.xib */; };
 		6DD1CB011902EB6B007D383A /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6DD1CB001902EB6B007D383A /* MapKit.framework */; };
+		6DD1CB041908DCED007D383A /* Icon.png in Resources */ = {isa = PBXBuildFile; fileRef = 6DD1CB031908DCED007D383A /* Icon.png */; };
+		6DD1CB061908DE1E007D383A /* Splash@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 6DD1CB051908DE1E007D383A /* Splash@2x.png */; };
 		6DEF2CD0188F9D8D00BC1A2E /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6DEF2CCF188F9D8D00BC1A2E /* Foundation.framework */; };
 		6DEF2CD2188F9D8D00BC1A2E /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6DEF2CD1188F9D8D00BC1A2E /* CoreGraphics.framework */; };
 		6DEF2CD4188F9D8D00BC1A2E /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6DEF2CD3188F9D8D00BC1A2E /* UIKit.framework */; };
@@ -161,6 +163,8 @@
 		6DD1CAFC190102C6007D383A /* PGPSAddressCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PGPSAddressCell.m; sourceTree = "<group>"; };
 		6DD1CAFE190102E3007D383A /* PGPSAddressCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = PGPSAddressCell.xib; sourceTree = "<group>"; };
 		6DD1CB001902EB6B007D383A /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
+		6DD1CB031908DCED007D383A /* Icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Icon.png; sourceTree = "<group>"; };
+		6DD1CB051908DE1E007D383A /* Splash@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Splash@2x.png"; sourceTree = "<group>"; };
 		6DEF2CCC188F9D8D00BC1A2E /* ProductGPS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ProductGPS.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		6DEF2CCF188F9D8D00BC1A2E /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		6DEF2CD1188F9D8D00BC1A2E /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -387,6 +391,15 @@
 			path = Cells;
 			sourceTree = "<group>";
 		};
+		6DD1CB021908DCED007D383A /* Images */ = {
+			isa = PBXGroup;
+			children = (
+				6DD1CB051908DE1E007D383A /* Splash@2x.png */,
+				6DD1CB031908DCED007D383A /* Icon.png */,
+			);
+			path = Images;
+			sourceTree = "<group>";
+		};
 		6DEF2CC3188F9D8D00BC1A2E = {
 			isa = PBXGroup;
 			children = (
@@ -479,6 +492,7 @@
 		6DEF2D08188F9E0000BC1A2E /* UI */ = {
 			isa = PBXGroup;
 			children = (
+				6DD1CB021908DCED007D383A /* Images */,
 				6DD1CAE618FF992E007D383A /* Item List VC */,
 				6DD1CAE018FF62D7007D383A /* Item Detail VC */,
 				6DD1CAC818F91BBD007D383A /* Item Grid VC */,
@@ -582,11 +596,13 @@
 				6DD1CAD718F91DF6007D383A /* PGPSItemGridViewCell.xib in Resources */,
 				6DD1CADF18FB0CCE007D383A /* placeholder.png in Resources */,
 				6DEF2D3E188FAE9D00BC1A2E /* MainMenuViewController.xib in Resources */,
+				6DD1CB061908DE1E007D383A /* Splash@2x.png in Resources */,
 				6DD1CAFA18FF9D51007D383A /* PGPSPhoneCell.xib in Resources */,
 				6DD1CAF418FF992F007D383A /* ItemsListViewController.xib in Resources */,
 				6DD1CADA18F92029007D383A /* katrina-kaif.png in Resources */,
 				6DD1CAF218FF992F007D383A /* blackTshirt.png in Resources */,
 				6DD1CACD18F91BBD007D383A /* PGPSItemGridViewController.xib in Resources */,
+				6DD1CB041908DCED007D383A /* Icon.png in Resources */,
 				6DD1CAF118FF992F007D383A /* ItemListCell.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
