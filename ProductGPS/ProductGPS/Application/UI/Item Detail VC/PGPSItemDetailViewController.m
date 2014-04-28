@@ -16,9 +16,10 @@
 @interface PGPSItemDetailViewController ()
 @property (nonatomic) IBOutlet UIImageView *productImageView;
 @property (nonatomic) IBOutlet UITableView *productTableView;
-@property (nonatomic) IBOutlet UILabel *productName;
-@property (nonatomic) IBOutlet UILabel *productBrand;
-@property (nonatomic) IBOutlet UILabel *productPrice;
+@property (nonatomic) IBOutlet UILabel *productNameLbl;
+@property (nonatomic) IBOutlet UILabel *productBrandLbl;
+@property (nonatomic) IBOutlet UILabel *productPriceLbl;
+@property (nonatomic) IBOutlet UILabel *productSizeLbl;
 @end
 
 @implementation PGPSItemDetailViewController
@@ -47,9 +48,10 @@
 
 #pragma  mark - UI Setup
 -(void) loadProduct{
-    self.productName.text = self.selectedProduct.name;
-    self.productBrand.text = self.selectedProduct.brand;
-    self.productPrice.text = [NSString stringWithFormat:@"$%@",self.selectedProduct.price];
+    self.productNameLbl.text = self.selectedProduct.name;
+    self.productBrandLbl.text = self.selectedProduct.brand;
+    self.productPriceLbl.text = [NSString stringWithFormat:@"$%@",self.selectedProduct.price];
+    self.productSizeLbl.text = [NSString stringWithFormat:@"Size : %@",self.selectedProduct.size];
     [self loadImage];
     [self.productTableView reloadData];
 }

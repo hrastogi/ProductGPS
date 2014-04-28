@@ -20,5 +20,12 @@
 @property (nonatomic) NSString *retailerName;
 @property (nonatomic) Image *largeImage;
 @property (nonatomic) Image *smallImage;
+@property (nonatomic) NSArray *variants;
+@property (nonatomic) NSString *size;
+@property (nonatomic) NSString *color;
+@property (nonatomic) BOOL isVariant;
+@property (nonatomic) BOOL hasVariants;
+@property (nonatomic) NSString *productId;
+@property (nonatomic) NSString *productDescription;
 
 @end

@@ -30,7 +30,7 @@
         NSDictionary *searchResult =[result objectForKey:@"SearchResult"];
         product = [self createProductFromDictionary:searchResult];
         [products addObject:product];
-    }
+        }
    
     return products;
 }
@@ -41,6 +41,13 @@
     product.name = [productResponse objectForKey:@"name"];
     product.brand = [productResponse objectForKey:@"brand"];
     product.price = [productResponse objectForKey:@"msrp"];
+    product.productId = [productResponse objectForKey:@"id"];
+    product.productDescription = [productResponse objectForKey:@"descriptionShort"];
+    
+    NSArray *sizeArr = [productResponse objectForKey:@"size"];
+    NSString *size = [sizeArr objectAtIndex:0];
+    product.size = size;
+    
     if(!product.price){
         product.price = [searchResult objectForKey:@"price"];
     }
@@ -59,6 +66,7 @@
         }
     }
     
+    // Create Address
     NSDictionary *location1 = [searchResult objectForKey:@"location"];
     NSDictionary *address = [location1 objectForKey:@"address"];
     NSDictionary *location = [location1 objectForKey:@"location"];
@@ -68,8 +76,35 @@
     product.distance = [NSNumber numberWithInt:[[distance objectForKey:@"distance"] intValue]];
     product.distanceUnit = [distance objectForKey:@"units"];
     product.address = [[Address alloc] initWithLocation:location andAddress:address andPhoneNumber:phoneNumber];
-   
+    
+    
+    // Create Variants
+    NSArray *variantArr = [searchResult objectForKey:@"variant"];
+    product.hasVariants = (variantArr.count > 0) ? YES : NO;
+    if(product.hasVariants){
+        product.isVariant = NO;
+        // Assemble the variants
+        product.variants = [self createVariant:variantArr fromProduct:product];
+        
+    }
     return product;
 }
+
+-(NSArray *) createVariant:(NSArray*)variantArr fromProduct:(Product*)product{
+    NSMutableArray *variants = [NSMutableArray array];
+    for(NSDictionary *dict in variantArr){
+        NSDictionary *productDict = [dict objectForKey:@"Product"];
+        Product *variantProduct = [[Product alloc] init];
+        variantProduct.productId = [productDict objectForKey:@"id"];
+        NSArray *sizeArr = [productDict objectForKey:@"size"];
+        NSString *size = [sizeArr objectAtIndex:0];
+        variantProduct.size = size;
+        variantProduct.isVariant = YES;
+        [variants addObject:variantProduct];
+    }
+    
+    return [NSArray arrayWithArray:variants];
+}
+
 
 @end
